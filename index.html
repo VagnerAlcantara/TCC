@@ -1,10 +1,164 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset="UTF-8">
-        <title> TCC </title>
-    </head>
-    <body>
-     Repositório para trabalhos relacionados ao trabalho de conclusão de curso.
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, .menu,
+.sub-menu {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.menu,
+.sub-menu {
+    list-style: none;
+    background: #000;
+}
+.sub-menu {
+    background: #444;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+    font-weight: 700;
+}
+.menu li {
+    position: relative;
+}
+.menu > li {
+    float: left;
+}
+.menu > li:hover {
+    background: #444;
+}
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.sub-menu li:hover {
+    background: #555;
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
+</style>
+
+<title>Trabalho de conclusão de curso</title>
+ <meta charset="utf-8">
+</head>
+<body>
+
+<nav class="menu-container">
+    <ul class="menu clearfix">
+        <li><a href="#">Geral</a>
+            <!-- Nível 1 -->
+            <!-- submenu -->
+            <ul class="sub-menu clearfix">
+                <li><a href="#">Declaração do Escopo</a>
+                    <!-- Nível 2 -->
+                    <!-- submenu do submenu -->
+					<!--
+                    <ul class="sub-menu">
+                        <li><a href="#">Sub Sub</a>
+                            <!-- Nível 3 -->
+                            <!-- submenu do submenu do submenu -->
+							<!--
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub Sub</a></li>
+                                <li><a href="#">Sub Sub</a></li>
+                                <li><a href="#">Sub Sub</a></li>
+                                <li><a href="#">Sub Sub</a></li>
+                                <li><a href="#">Sub Sub</a></li>
+                            </ul><!-- submenu do submenu do submenu -->
+							<!--
+                        </li>
+                        <li><a href="#">Sub Sub</a></li>
+                        <li><a href="#">Sub Sub</a></li>
+                        <li><a href="#">Sub Sub</a></li>
+                        <li><a href="#">Sub Sub</a></li>
+                    </ul>-->
+					<!-- submenu do submenu -->
+					
+                </li>
+                <li><a href="#">Integrantes do Projeto</a></li>
+                <li><a href="#">Regras de Comunicação</a></li>
+				<li><a href="#">Referências</a></li>
+            </ul><!-- submenu -->
+        </li>
+        <li><a href="#">Análise do Problema</a>
+		 <ul class="sub-menu clearfix">
+                <li><a href="#">Declaração do Problema</a></li>
+                <li><a href="#">Análise das Causas Raízes</a></li>
+                <li><a href="#">Usuários e Stakeholders</a></li>
+                <li><a href="#">Fronteira Sistêmica</a></li>
+				<li><a href="#">Lista de Restrições</a></li>
+            </ul><!-- submenu -->
+		</li>
+        <li><a href="#">Workshop de Características</a>
+		<ul class="sub-menu clearfix">
+                <li><a href="#">Lista de Necessidades</a></li>
+                <li><a href="#">Lista de Características (LC)</a></li>
+                <li><a href="#">LC Priorizada</a></li>
+                <li><a href="#">LC Priorizada X Esforço</a></li>
+				<li><a href="#">LC Priorizada X Esforço X Risco</a></li>
+				<li><a href="#">Definição de Baselines</a></li>
+         </ul><!-- submenu -->
+		</li>
+		<li><a href="#">Modelagem dos Processos de Negócio</a>
+		<ul class="sub-menu clearfix">
+                <li><a href="#">Arquitetura de Negócio para cada Cenário</a></li>
+                <li><a href="#">DFD Essencial para cada Capacidade</a></li>
+                <li><a href="#">Descrição dos Processos de Negócio</a></li>
+                <li><a href="#">Regras de Negócio</a></li>
+				<li><a href="#">Modelo Conceitual para cada Nó Operacional</a></li>
+				<li><a href="#">Análise do Ciclo de Vida</a></li>
+         </ul><!-- submenu -->
+		</li>
+        <li><a href="#">Projeto do Sistema</a>
+		<ul class="sub-menu clearfix">
+                <li><a href="#">Arquitetura do Sistema</a></li>
+                <li><a href="#">Descrição dos Subsistemas</a></li>
+                <li><a href="#">Descrição das Interfaces Internas</a></li>
+                <li><a href="#">Descrição das Interfaces Externas (Atores)</a></li>
+         </ul><!-- submenu -->
+		</li>
+		<li><a href="#">Análise de Software</a>
+		<ul class="sub-menu clearfix">
+                <li><a href="#">Diagrama de Casos de Uso do Subsistema</a></li>
+                <li><a href="#">Realização dos Casos de Uso do Subsistema</a></li>
+                <li><a href="#">Requisitos de Software do Subsistema(SRS)</a></li>
+                <li><a href="#">Storyboard para cada Caso de Uso</a></li>
+				<li><a href="#">Dicionário de Dados do Subsistema</a></li>
+				<li><a href="#">Mensagens</a></li>
+				<li><a href="#">Algoritmos</a></li>
+         </ul><!-- submenu -->
+		 </li>
+		<li><a href="#">Projeto de Software</a>
+		<ul class="sub-menu clearfix">
+                <li><a href="#">Projeto de Banco de Dados</a></li>
+                <li><a href="#">Projeto de IHM</a></li>
+                <li><a href="#">Aplicação dos Padrões de Projeto</a></li>
+         </ul><!-- submenu -->
+		</li>
+    </ul>
+</nav>
+</body>
+</html>
