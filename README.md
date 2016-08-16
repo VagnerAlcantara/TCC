@@ -25,5 +25,5 @@
   <dd><a href="https://goo.gl/ZS4IT1" target="_blank">LC Priorizada (LC)</a></dd>
   <dd><a href="https://goo.gl/c3SGn9" target="_blank">LC Priorizada X Esforço</a></dd>
   <dd><a href="https://goo.gl/cJmcfX" target="_blank">LC Priorizada X Esforço X Risco</a></dd>
-  <dd><a href="default.asp" target="_blank">Definição de Baselines</a></dd>
+  <dd><a href="https://goo.gl/S0FL96" target="_blank">Definição de Baselines</a></dd>
 </dl>
