@@ -27,5 +27,5 @@
   <dd><a href="https://goo.gl/cJmcfX" target="_blank">LC Priorizada X Esforço X Risco</a></dd>
   <dd><a href="https://goo.gl/S0FL96" target="_blank">Definição de Baselines</a></dd>
   <dt>Modelagem dos Processos de Negócio</dt>
-  <dd><a href="https://goo.gl/n4pH9K" target="_blank">Definição de Baselines</a></dd>
+  <dd><a href="https://goo.gl/n4pH9K" target="_blank">Modelagem dos Processos de Negócio</a></dd>
 </dl>
