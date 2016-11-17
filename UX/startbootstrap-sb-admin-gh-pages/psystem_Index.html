@@ -1,40 +1,192 @@
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 10px 25px;
+    width: 100%;
+    background:#ddd;;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+
+
+
 <div class="row">
 	<div id="calendario" class="col-lg-6">
     <h2>Calendário</h2>
-                        
+            <div class="month">
+              <ul>
+                <li class="prev">❮</li>
+                <li class="next">❯</li>
+                <li style="text-align:center">
+                  Novembro<br>
+                  <span style="font-size:18px">2016</span>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="weekdays">
+              <li>Seg</li>
+              <li>Ter</li>
+              <li>Qua</li>
+              <li>Qui</li>
+              <li>Sex</li>
+              <li>Sab</li>
+              <li>Dom</li>
+            </ul>
+
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>            
     </div>
     <div id="notasDia" class="col-lg-6">
     <h2>Notas</h2>
-    <div class="table-responsive">
-    <table class="table table-bordered table-hover table-striped">
-        <thead>
-         <tr>
+   <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+        <thead >
+         <tr class="active">
           <th>Horário</th>
           <th>Paciente</th>
-          <th>Ações</th>
           </tr>
          </thead>
          <tbody>
             <tr>
                 <td>08:00</td>
                 <td>João </td>
-                <td>Visualizar</td>
             </tr>
             <tr>
-                <td>08:00</td>
-                <td>João </td>
-                <td>Visualizar</td>
+                <td>09:00</td>
+                <td>Maria </td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Maria </td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>Maria </td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Maria </td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Maria </td>
             </tr>
          </tbody>
      </table>
      </div>
      </div>
 </div>
+</br>
 <div class="row">
 	<div id="detalhesNotas" class="col-lg-12">
-        <div class="panel panel-info">
+        <div class="panel panel-default">
             <div class="panel-heading">
-            <h3 class="panel-title">Detalhes</h3>
+            <h3 class="panel-title">Avisos</h3>
             </div>
         <div class="panel-body">
            <div >
