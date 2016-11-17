@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>Psystem</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Psystem</a>
+                <a class="navbar-brand" onclick="carregarPagina('psystem_Index.html')" href="#">Psystem</a>
+            </div>
+            <div class="nav navbar-right top-nav" >
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="buscar">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                </div>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -66,11 +74,12 @@
                     </ul>
                 </li>
             </ul>
+            
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Agenda</a>
+                        <a onclick="carregarPagina('psystem_Agenda.html')" href="#"><i class="fa fa-fw fa-dashboard"></i> Agenda</a>
                     </li>
 					 <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Cadastro <i class="fa fa-fw fa-caret-down"></i></a>
@@ -160,11 +169,13 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+            
         </nav>
+        
 
         <div id="page-wrapper">
 
-            <div class="container-fluid">
+            <div class="container-fluid" id="pagePsystem">
 
             </div>
             <!-- /.container-fluid -->
@@ -180,7 +191,20 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script>
+    $(document).ready(function(){
+        carregarPagina(null);
+    });
+    function carregarPagina(page){
+            if(page == null)
+            {
+                $('#pagePsystem').load('psystem_Index.html');    
+            }
+            else{
+                $('#pagePsystem').load(page);
+            }
+        }
+    </script>
 </body>
 
 </html>
