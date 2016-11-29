@@ -2533,16 +2533,7 @@ table th[class*=col-] {
     overflow-x: auto
 }
 
-.agenda{
-	width: 100%;
-	height: 500px;
-	overflow: scroll;
-    float: left;
-}
-.agenda-detalhe{
-    width: auto;
-    float: left;
-}
+
 
 @media screen and (max-width: 767px) {
     .table-responsive {
@@ -4690,8 +4681,8 @@ fieldset[disabled] .navbar-default .btn-link:hover {
     color: #ccc
 }
 .navbar-inverse {
-    background-color: #0872BA;
-    border-color: #080808
+    background-color: #222;
+    border-color: #222
 }
 .navbar-inverse .navbar-brand {
     color: #FFF
