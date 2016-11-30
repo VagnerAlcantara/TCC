@@ -1,0 +1,211 @@
+
+<div class="row">
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><i class="glyphicon glyphicon-plus"></i> Novo agendamento <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Consulta</a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-briefcase"></i> Palestra</a>
+                </li>                        
+            </ul>
+        </li>
+    </ul>
+	<ul class="nav navbar-right top-nav">
+		<li class="dropdown">
+			<a onclick="carregarPagina('Agenda.html')" href="#"><i class="glyphicon glyphicon-search"></i> Busca avançada</a>
+		</li>
+    </ul>
+</div>
+<div class="row">
+	<div id="calendario" class="col-lg-6">
+	
+    <div class="page-header">
+        <h3>Calendário</h3>
+    </div>
+            <div class="month">
+              <ul>
+                <li class="prev">❮</li>
+                <li class="next">❯</li>
+                <li style="text-align:center">
+                  Novembro<br>
+                  <span style="font-size:18px">2016</span>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="weekdays">
+              <li>Seg</li>
+              <li>Ter</li>
+              <li>Qua</li>
+              <li>Qui</li>
+              <li>Sex</li>
+              <li>Sab</li>
+              <li>Dom</li>
+            </ul>
+
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>            
+    </div>
+    
+	<div id="notasDia" class="col-lg-6">
+		<div class="page-header">
+        <h3>Agenda do dia</h3>
+    </div>
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+					  <th>Horário</th>
+					  <th>Paciente</th>
+					  <th>Serviço</th>
+					  <th>Local</th>
+					  <th></th>
+					</tr>
+				 </thead>
+				<tbody>
+					<tr>
+						<td>08:00</td>
+						<td>João </td>
+						<td>Avaliação Psicológica </td>
+						<td>Consultório</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>09:00</td>
+						<td>Maria </td>
+						<td>Análise Clínica </td>
+						<td>Empresa Xpto</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>10:00</td>
+						<td>Maria </td>
+						<td>Avaliação Psicológica </td>
+						<td>Consultório</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>11:00</td>
+						<td>Maria </td>
+						<td>Avaliação Psicológica </td>
+						<td>Consultório</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>13:00</td>
+						<td>Maria </td>
+						<td>Análise Clínica </td>
+						<td>Empresa Xpto</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>14:00</td>
+						<td>Empresa Xpto </td>
+						<td>Palestra </td>
+						<td>Espaço de eventos Xpto</td>
+						<td style="width:75px"> 
+							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+						</td>
+					</tr>
+				 </tbody>
+			 </table>
+		</div>
+    </div>
+</div>
+
+<div class="row">
+	<div id="detalhesNotas" class="col-lg-12">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+				<h3 class="panel-title">Lembretes</h3>
+            </div>
+        <div class="panel-body">
+           <div >
+                <p>Exibir lembretes e notas importantes do dia.</p>
+           </div>
+        </div>
+        </div>
+    </div>               
+</div>
+
+<div class="row">
+	<div id="detalhesNotas" class="col-lg-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+				<h3 class="panel-title">Acesso rápido às funcionalidades mais acessados</h3>
+				</div>
+				<div class="panel-body">
+		<div id="detalhesNotas" class="col-lg-2">
+			<a href="#"> <h3 class="panel-title">Agenda</h3></a>
+		</div>             
+		<div id="detalhesNotas" class="col-lg-2">
+			<a href="#"> <h3 class="panel-title">Relatório</h3></a>
+		</div>         
+		<div id="detalhesNotas" class="col-lg-2">
+			<a href="#"> <h3 class="panel-title">Cadastro</h3></a>
+		</div>   
+		<div id="detalhesNotas" class="col-lg-2">
+			<a href="#"> <h3 class="panel-title">Prontuário</h3></a>
+		</div>
+		</div>   
+		 </div>
+        </div>
+	</div>
+</div>   
+	
