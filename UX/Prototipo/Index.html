@@ -19,6 +19,7 @@
 		</li>
     </ul>
 </div>
+<!--
 <div class="row">
 	<div id="calendario" class="col-lg-6">
 	
@@ -80,28 +81,48 @@
               <li>31</li>
             </ul>            
     </div>
-    
-	<div id="notasDia" class="col-lg-6">
-		<div class="page-header">
-        <h3>Agenda do dia</h3>
-    </div>
+ -->   
+
+
+
+ 
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Agenda do dia</h3>
+	</div>
+	<div class="panel-body">
+		<div class="panel panel-default ">
+			<div class='input-group date' id='datetimepicker1'>
+				<input type='text' class="form-control" />
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+			</div>
+			<script type="text/javascript">
+				$(function () {
+					$('#datetimepicker1').datetimepicker();
+				});
+			</script>
+	</div>
 		<div class="table-responsive">
 			<table class="table table-bordered table-hover table-striped">
 				<thead>
 					<tr class="active">
-					  <th>Horário</th>
-					  <th>Paciente</th>
-					  <th>Serviço</th>
-					  <th>Local</th>
-					  <th></th>
+						<th></th>
+						<th>Horário</th>
+						<th>Paciente</th>
+						<th>Serviço</th>
+						
+						<th></th>
 					</tr>
-				 </thead>
+				</thead>
 				<tbody>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
 						<td>08:00</td>
 						<td>João </td>
 						<td>Avaliação Psicológica </td>
-						<td>Consultório</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -109,10 +130,10 @@
 						</td>
 					</tr>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
 						<td>09:00</td>
 						<td>Maria </td>
 						<td>Análise Clínica </td>
-						<td>Empresa Xpto</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -120,10 +141,10 @@
 						</td>
 					</tr>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
 						<td>10:00</td>
 						<td>Maria </td>
 						<td>Avaliação Psicológica </td>
-						<td>Consultório</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -131,10 +152,10 @@
 						</td>
 					</tr>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
 						<td>11:00</td>
 						<td>Maria </td>
 						<td>Avaliação Psicológica </td>
-						<td>Consultório</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -142,10 +163,10 @@
 						</td>
 					</tr>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
 						<td>13:00</td>
 						<td>Maria </td>
 						<td>Análise Clínica </td>
-						<td>Empresa Xpto</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -153,44 +174,27 @@
 						</td>
 					</tr>
 					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
 						<td>14:00</td>
 						<td>Empresa Xpto </td>
 						<td>Palestra </td>
-						<td>Espaço de eventos Xpto</td>
 						<td style="width:75px"> 
 							<a data-toggle="tooltip" title="Cancelar consulta" href="#"><i class="glyphicon glyphicon-remove"></i></a>
 							<a data-toggle="tooltip" title="Editar consulta" href="#"><i class="glyphicon glyphicon-pencil"></i></a>
 							<a data-toggle="tooltip" title="Visualizar detalhes" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
 						</td>
 					</tr>
-				 </tbody>
-			 </table>
+				</tbody>
+			</table>
 		</div>
     </div>
 </div>
 
-<div class="row">
-	<div id="detalhesNotas" class="col-lg-12">
-        <div class="panel panel-warning">
-            <div class="panel-heading">
-				<h3 class="panel-title">Lembretes</h3>
-            </div>
-        <div class="panel-body">
-           <div >
-                <p>Exibir lembretes e notas importantes do dia.</p>
-           </div>
-        </div>
-        </div>
-    </div>               
-</div>
-
-<div class="row">
-	<div id="detalhesNotas" class="col-lg-12">
-		<div class="panel panel-default">
-		<div class="panel-heading">
-				<h3 class="panel-title">Acesso rápido às funcionalidades mais acessados</h3>
-				</div>
-				<div class="panel-body">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Acesso rápido às funcionalidades mais acessados</h3>
+	</div>
+	<div class="panel-body">
 		<div id="detalhesNotas" class="col-lg-2">
 			<a href="#"> <h3 class="panel-title">Agenda</h3></a>
 		</div>             
@@ -203,9 +207,5 @@
 		<div id="detalhesNotas" class="col-lg-2">
 			<a onclick="carregarPagina('Prontuario.html')" href="#"> <h3 class="panel-title">Prontuário</h3></a>
 		</div>
-		</div>   
-		 </div>
-        </div>
-	</div>
-</div>   
-	
+	</div>   
+</div>
