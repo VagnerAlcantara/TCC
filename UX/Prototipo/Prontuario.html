@@ -1,6 +1,6 @@
 <div class="panel-group">
   <div class="panel panel-default">
-	<div class="panel-heading"><h4>Prontuário</h4></div>
+	<div class="panel-heading"><h4>Dados Pessoas</h4></div>
     <div class="panel-body">
 		<fieldset disabled>
 			<div class="form-group col-lg-10">
@@ -30,18 +30,116 @@
 				  <option value="masc">Masculino</option>
 				</select>
 			</div>
-			<div class="form-group col-lg-10">
-				<label for="nomeEmpresa">Empresa</label>
-				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="XPTO LTDA"/>
+			<div class="form-group col-lg-8">
+				<label for="nomeEmpresa">Endereço</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Rua A"/>
 			</div>
-			<div class="form-group col-lg-10">
-				<label for="observacoesPasciente">Histórico</label>
-				<textarea type="text" rows="5" class="form-control input-small" id="observacoesPasciente" aria-describedby="observacoesPascienteHelp" />
+			<div class="form-group col-lg-1">
+				<label for="nomeEmpresa">Número</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00"/>
+			</div>
+			<div class="form-group col-lg-1">
+				<label for="nomeEmpresa">Comp.</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="nomeEmpresa">CEP</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00000-000"/>
+			</div>
+			<div class="form-group col-lg-6">
+				<label for="nomeEmpresa">Bairro</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Centro"/>
+			</div>
+			<div class="form-group col-lg-4">
+				<label for="nomeEmpresa">Cidade</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="São Paulo"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="nomeEmpresa">Estado</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="SP"/>
 			</div>
 		</fieldset>
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-default">Editar</button>
-	</div>
+		</div>
 	</div>
   </div>
+  
+  <!-- Histórico -->
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Histórico</h4></div>
+    <div class="panel-body">			
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th>Data</th>
+						<th>Anatoções</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10/10/2016</td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-paperclip"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>10/11/2016</td>
+						<td>Análise Clínica </td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-paperclip"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+  
+  <!-- próximos agendamentos -->
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Próximos agendamentos</h4></div>
+    <div class="panel-body">
+		<div class="table-responsive col-lg-3">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th>Data</th>
+						<th>Hora</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10/12/2016</td>
+						<td>16:00</td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>10/01/2017</td>
+						<td>15:00</td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+  
+	
 </div>
