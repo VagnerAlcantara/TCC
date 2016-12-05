@@ -53,13 +53,13 @@
 				</div>
 				
             </div>
-			</br>
+			<!--</br>
             <div class="nav navbar-right top-nav" >
                 <div class="form-group input-group">
                     <input type="text" class="form-control" placeholder="buscar">
                     <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
                 </div>
-            </div>
+            </div>-->
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
@@ -83,8 +83,14 @@
           <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
+						</br>
+						<div class="form-group input-group">
+							<input type="text" class="form-control" placeholder="buscar">
+							<span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+						</div>
                         <a onclick="carregarPagina('Index.html')" href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
                     </li>
+					
 					 <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Cadastro <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
@@ -190,7 +196,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/locales/bootstrap-datetimepicker.pt-BR.js"></script>
 	<script type="text/javascript">
 
 
@@ -200,10 +205,10 @@
     function carregarPagina(page){
             if(page == null)
             {
-                $('#pagePsystem').load('Index.html');    
+                $('#pagePsystem').load('pages/Index.html');    
             }
             else{
-                $('#pagePsystem').load(page);
+                $('#pagePsystem').load('pages/'+page);
             }
         }
 
@@ -211,7 +216,7 @@
 
     </script>
 
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 <footer>
     <div class="footer" id="footer">
         <div class="container">
