@@ -76,7 +76,7 @@ background-color: #f2f2f2;
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover 
 {
 	background-color: #f2f2f2;
-	 color: #000000;;
+	color: #000000;
 }
 
 .navbar-inverse .navbar-nav > li > a{
@@ -285,7 +285,7 @@ ul.alert-dropdown {
 }
 
 .psystem-bodyMaster {
-    padding: 25px;
+    padding: 70px;
 	
 }
 
@@ -508,4 +508,9 @@ body {font-family: Verdana,sans-serif;}
 }
 .payments {
 	font-size: 1.5em;	
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #000;
 }
