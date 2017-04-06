@@ -32,5 +32,11 @@
   <dd><a href="https://goo.gl/5fxmgu" target="_blank">Projeto de Banco de dados (Entrega)</a></dd>
   <dt>UX</dt>
   <dd><a href="https://goo.gl/I3dljU" target="_blank">Protótipo</a></dd>
-  
+    <dt>Qualidade de Processo de Software</dt>
+  <dd><a href="https://goo.gl/TnHd2C" target="_blank">Qualidade de Processo de Software</a></dd>
+  <dd><a href="https://goo.gl/tUfFhs" target="_blank">Plano de Qualidade e teste</a></dd>
+    <dt>Qualidade de Produto de Software</dt>
+  <dd><a href="https://goo.gl/jo8QFY" target="_blank">Qualidade de produto de Software</a></dd>
+  <dd><a href="https://goo.gl/yCDpUy" target="_blank">Apresentação do Trabalho</a></dd>
+
 </dl>
