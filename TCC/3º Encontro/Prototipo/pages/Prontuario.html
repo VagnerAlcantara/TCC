@@ -1,0 +1,160 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Dados Pessoas</h4></div>
+    <div class="panel-body">
+		<fieldset disabled>
+			<div class="form-group col-lg-10">
+				<label for="nomePaciente">Nome</label>
+				<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="dataNascimento">Data Nascimento</label>
+				<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="DD/MM/YYYY"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="rgPaciente">RG</label>
+				<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="XX.XXX.XXX-X"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="cpfPaciente">CPF</label>
+				<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="XXX.XXX.XXX-XX"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="telefonePaciente">Telefone</label>
+				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(XX) XXXX-XXX"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="sexoPaciente">Sexo</label></br>
+				<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
+				  <option value="fem">Feminino</option>
+				  <option value="masc">Masculino</option>
+				</select>
+			</div>
+			<div class="form-group col-lg-8">
+				<label for="nomeEmpresa">Endereço</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Rua A"/>
+			</div>
+			<div class="form-group col-lg-1">
+				<label for="nomeEmpresa">Número</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00"/>
+			</div>
+			<div class="form-group col-lg-1">
+				<label for="nomeEmpresa">Comp.</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="nomeEmpresa">CEP</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00000-000"/>
+			</div>
+			<div class="form-group col-lg-6">
+				<label for="nomeEmpresa">Bairro</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Centro"/>
+			</div>
+			<div class="form-group col-lg-4">
+				<label for="nomeEmpresa">Cidade</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="São Paulo"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="nomeEmpresa">Estado</label>
+				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="SP"/>
+			</div>
+		</fieldset>
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-default">Editar</button>
+		</div>
+	</div>
+  </div>
+  
+  <!-- Histórico -->
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Histórico</h4></div>
+    <div class="panel-body">			
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th>Data</th>
+						<th>Anatoções</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10/10/2016</td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-paperclip"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>10/11/2016</td>
+						<td>Análise Clínica </td>
+						<td style="width:10px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							  <span class="glyphicon glyphicon-paperclip"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+  
+  <!-- próximos agendamentos -->
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Próximos agendamentos</h4></div>
+    <div class="panel-body">
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Data</th>
+						<th>Hora</th>
+						<th>Serviço</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>10/12/2016</td>
+						<td>16:00</td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:75px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento">
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>10/01/2017</td>
+						<td>15:00</td>
+						<td>Análise Clínica </td>
+						<td style="width:75px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento">
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>
