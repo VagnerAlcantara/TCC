@@ -2,18 +2,18 @@
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Pesquisar</h4></div>
     <div class="panel-body">
+	<fieldset disabled>
 	<div class="form-group col-lg-12">
 		<div class="form-group col-lg-6">
 			<label for="nomePaciente">Nome</label>
-			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
-			<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>
+			<input type="text" class="form-control input-small" id="nomePaciente" value="João da silva" aria-describedby="nomePacienteHelp"/>
 		</div>
 		<div class="form-group col-lg-2">
 			<label for="cpfPaciente">CPF</label>
-			<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
-			<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small>
+			<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="333.222.999-44" aria-describedby="cpfPacienteHelp"/>
 		</div>
 	</div>
+	</fieldset>
 	<div class="form-group col-lg-12">
 		<div class="form-group col-lg-3">
 			<label for="dtFim">Data início</label>
@@ -35,6 +35,8 @@
 		</div>
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-primary">Pesquisar</button>
+			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Novo agendamento</button>
+			<!--<a onclick="carregarPagina('AgendaIncluir.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>-->
 		</div>
 	</div>
 		
@@ -51,8 +53,8 @@
 				<thead>
 					<tr class="active">
 						<th></th>
+						<th>Data</th>
 						<th>Horário</th>
-						<th>Paciente</th>
 						<th>Serviço</th>
 						<th></th>
 					</tr>
@@ -60,8 +62,8 @@
 				<tbody>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>01/01/1900 </td>
 						<td>08:00</td>
-						<td>João </td>
 						<td>Avaliação Psicológica </td>
 						<td style="width:100px"> 
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
@@ -73,50 +75,15 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar detalhes">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
-							
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>09:00</td>
-						<td>Maria </td>
-						<td>Análise Clínica </td>
+						<td>01/01/1900 </td>
+						<td>08:00</td>
+						<td>Palestra </td>
 						<td style="width:100px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal"  title="Visualizar detalhes">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>10:00</td>
-						<td>Maria </td>
-						<td>Avaliação Psicológica </td>
-						<td style="width:100px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal"  title="Visualizar detalhes">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
-						<td>11:00</td>
-						<td>Maria </td>
-						<td>Avaliação Psicológica </td>
-						<td style="width:100px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
@@ -129,34 +96,17 @@
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
-						<td>13:00</td>
-						<td>Maria </td>
-						<td>Análise Clínica </td>
+						<td>01/01/1900 </td>
+						<td>08:00</td>
+						<td>Avaliação Psicológica </td>
 						<td style="width:100px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal"  title="Visualizar detalhes">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>14:00</td>
-						<td>Empresa Xpto </td>
-						<td>Palestra </td>
-						<td style="width:100px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Cancelar consulta">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal"  title="Visualizar detalhes">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar detalhes">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
 						</td>
