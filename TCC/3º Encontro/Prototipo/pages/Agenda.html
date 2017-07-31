@@ -4,13 +4,13 @@
     <div class="panel-body">
 	<fieldset disabled>
 	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-6">
-			<label for="nomePaciente">Nome</label>
-			<input type="text" class="form-control input-small" id="nomePaciente" value="João da silva" aria-describedby="nomePacienteHelp"/>
-		</div>
 		<div class="form-group col-lg-2">
 			<label for="cpfPaciente">CPF</label>
 			<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="333.222.999-44" aria-describedby="cpfPacienteHelp"/>
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="nomePaciente">Nome</label>
+			<input type="text" class="form-control input-small" id="nomePaciente" value="João da silva" aria-describedby="nomePacienteHelp"/>
 		</div>
 	</div>
 	</fieldset>
@@ -35,7 +35,7 @@
 		</div>
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-primary">Pesquisar</button>
-			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Novo agendamento</button>
+			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
 			<!--<a onclick="carregarPagina('AgendaIncluir.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>-->
 		</div>
 	</div>
@@ -69,7 +69,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('AgendaAlterar.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar detalhes">
@@ -86,7 +86,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('AgendaAlterar.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar detalhes">
@@ -103,7 +103,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Cancelar consulta">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('prontuario.html')" >
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar consulta" onclick="carregarPagina('AgendaAlterar.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar detalhes">
