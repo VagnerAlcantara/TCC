@@ -137,42 +137,53 @@
 				  <div class="panel panel-default">
 						<div class="panel-body">
 						<fieldset disabled>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">Nome</label>
-							  <div class="col-xs-10">
-								<input class="form-control" type="text" value="João" id="example-text-input">
-							  </div>
+							<div class="page-header">
+								<h4>Dados pessoais</h4>
 							</div>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">CPF</label>
-							  <div class="col-xs-4">
-								<input class="form-control" type="text" value="XXX.XXX.XXX-XX" id="example-text-input">
-							  </div>
+							<div class="form-group col-lg-12">
+								<label for="nomePaciente">Nome</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria dos Santos"/>
 							</div>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">Data Nascimento</label>
-							  <div class="col-xs-4">
-								<input class="form-control" type="text" value="01/01/1990" id="example-text-input">
-							  </div>
+							<div class="form-group col-lg-6">
+								<label for="dataNascimento">Data Nascimento</label>
+								<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="15/03/1978"/>
 							</div>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">Telefone</label>
-							  <div class="col-xs-5">
-								<input class="form-control" type="text" value="(XX)XXXXX-XXXX" id="example-text-input">
-							  </div>
+							<div class="form-group col-lg-6">
+								<label for="nomePaciente">Sexo</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Feminino"/>
 							</div>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">Empresa</label>
-							  <div class="col-xs-10">
-								<input class="form-control" type="text" value="Empresa" id="example-text-input">
-							  </div>
+							
+							<div class="form-group col-lg-4">
+								<label for="rgPaciente">RG</label>
+								<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="40.444.555-8"/>
 							</div>
-							<div class="form-group row">
-							  <label for="example-text-input" class="col-xs-2 col-form-label">Observação</label>
-							  <div class="col-xs-10">
-								<input class="form-control" type="textarea" value="Informações adiconais " id="example-text-input">
-							  </div>
+							<div class="form-group col-lg-4">
+								<label for="cpfPaciente">CPF</label>
+								<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="999.666.555-88"/>
 							</div>
+							<div class="form-group col-lg-4">
+								<label for="telefonePaciente">Telefone</label>
+								<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 9999-5555"/>
+							</div>
+							
+							<div class="page-header">
+								<h4>Agedamento</h4>
+							</div>
+							<div class="form-group col-lg-4">
+								<label for="nomePaciente">Serviço</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Consulta"/>
+							</div>
+							
+							<div class="form-group col-lg-8">
+								<label for="dtFim">Data/ hora</label>
+								<div class='input-group date col-xs-8' id='dtFim'>
+									<input type='date' class="form-control datepicker" value="01/01/1900 08:00" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+							
 						</fieldset>
 						</div>
 					</div>
