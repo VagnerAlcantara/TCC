@@ -1,0 +1,104 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pesquisar</h4></div>
+    <div class="panel-body">
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-2">
+			<label for="cpfPaciente">CPF</label>
+			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
+			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="nomePaciente">Nome</label>
+			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
+			<!--<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>-->
+		</div>
+	</div>
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-primary">Pesquisar</button>
+			<button type="submit" class="btn btn-primary">Cadastrar Cobranca</button>
+		</div>
+	</div>
+		
+	</div>
+  </div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Cobrancas</h4></div>
+    <div class="panel-body">
+	
+       		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Paciente/Empresa</th>
+						<th>CPF/CNPJ</th>
+						<th>Servico</th>
+						<th>Valor</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Maria</td>
+						<td>333.222.999-44</td>
+						<td>Avaliacao</td>
+						<td>R$ 100,00</td>
+						<td>Pendente</td>
+						<td style="width:100px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar Cobrança" onclick="carregarPagina('PacienteProntuario.html')">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Empresa LTDA</td>
+						<td>37486976000126</td>
+						<td>Palestra</td>
+						<td>R$ 300,00</td>
+						<td>Pago</td>
+						<td style="width:100px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Cobrança" >
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+																<td>Antonio</td>
+						<td>444.222.999-44</td>
+						<td>Particular</td>
+						<td>R$ 150,00</td>
+						<td>Pendente</td>
+						<td style="width:50px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Cobrança">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+				
+		</div>
+	</div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="window.history.back();">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>
