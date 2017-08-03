@@ -2,19 +2,36 @@
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Pesquisar</h4></div>
     <div class="panel-body">
-	<fieldset disabled>
+	
+	
 	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-2">
-			<label for="cpfPaciente">CPF</label>
-			<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="333.222.999-44" aria-describedby="cpfPacienteHelp"/>
+		<div class="form-group col-lg-12">
+			<div class="form-group">
+				<label class="radio-inline">
+					<input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="" type="radio" onchange="undisableFieldset()" >Todos
+				</label>
+				<label class="radio-inline">
+					<input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" onchange="disableField()">Apenas horários disponíveis
+				</label>
+			</div>
 		</div>
-		<div class="form-group col-lg-6">
-			<label for="nomePaciente">Nome</label>
-			<input type="text" class="form-control input-small" id="nomePaciente" value="João da silva" aria-describedby="nomePacienteHelp"/>
-		</div>
-	</div>
-	</fieldset>
-	<div class="form-group col-lg-12">
+			<div class="form-group col-lg-2">
+				<label for="cpfPaciente">CPF</label>
+				<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="" aria-describedby="cpfPacienteHelp"/>
+			</div>
+			<div class="form-group col-lg-6">
+				<label for="nomePaciente">Nome</label>
+				<input type="text" class="form-control input-small" id="nomePaciente" value="" aria-describedby="nomePacienteHelp"/>
+			</div>
+
+			<div class="form-group col-lg-3">
+					<label for="cboServico">Serviço</label></br>
+					<select class="form-control input-small" id="cboServico" aria-describedby="cboServicoHelp">
+					  <option value="selecione">Selecione</option>
+					  <option value="fem">Palestra</option>
+					  <option value="masc">Consulta</option>
+					</select>
+			</div>
 		<div class="form-group col-lg-3">
 			<label for="dtFim">Data início</label>
 			<div class='input-group date col-xs-9' id='dtInicio'>
@@ -27,12 +44,13 @@
 		<div class="form-group col-lg-3">
 			<label for="dtFim">Data fim</label>
 			<div class='input-group date col-xs-9' id='dtFim'>
-				<input type='date' class="form-control datepicker" value="01/01/1900" />
+				<input type='date' class="form-control datepicker" value="01/02/1900" />
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-calendar"></span>
 				</span>
 			</div>
 		</div>
+		
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-primary">Pesquisar</button>
 			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
@@ -65,14 +83,14 @@
 						<td>01/01/1900 </td>
 						<td>08:00</td>
 						<td>Avaliação Psicológica </td>
-						<td style="width:100px"> 
+						<td style="width:170px"> 
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
 							  <span class="glyphicon glyphicon glyphicon-ok"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
 							  <span class="glyphicon glyphicon-file"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
@@ -88,14 +106,14 @@
 						<td>01/01/1900 </td>
 						<td>08:00</td>
 						<td>Palestra </td>
-						<td style="width:100px"> 
+						<td style="width:170px"> 
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
 							  <span class="glyphicon glyphicon glyphicon-ok"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
 							  <span class="glyphicon glyphicon-file"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
@@ -111,14 +129,14 @@
 						<td>01/01/1900 </td>
 						<td>08:00</td>
 						<td>Avaliação Psicológica </td>
-						<td style="width:100px"> 
+						<td style="width:170px"> 
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
 							  <span class="glyphicon glyphicon glyphicon-ok"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
 							  <span class="glyphicon glyphicon-file"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
@@ -299,3 +317,17 @@
   </div>
 </div>
 </div>
+
+<script>
+function disableField() {
+    document.getElementById("cboServico").disabled = true;
+	document.getElementById("nomePaciente").disabled = true;
+	document.getElementById("cpfPaciente").disabled = true;
+}
+
+function undisableFieldset() {
+    document.getElementById("cboServico").disabled = false;
+	document.getElementById("nomePaciente").disabled = false;
+	document.getElementById("cpfPaciente").disabled = false;
+}
+</script>
