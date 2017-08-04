@@ -2,9 +2,19 @@
 <div class="panel-body">
 <div class="row">
 	<ul class="nav navbar-right top-nav">
+	
 		<li class="dropdown">
-			<a onclick="carregarPagina('PacienteIndex.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>
-		</li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-plus"></i> Novo agendamento <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a onclick="carregarPagina('PacienteIndex.html')" href="#"><i class="glyphicon glyphicon-user"></i> Paciente</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a onclick="carregarPagina('EmpresaIndex.html')" href="#"><i class="glyphicon glyphicon-briefcase"></i> Empresa</a>
+                        </li>
+                    </ul>
+                </li>
     </ul>
     
 	<ul class="nav navbar-right top-nav">

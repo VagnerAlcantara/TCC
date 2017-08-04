@@ -154,8 +154,8 @@
                         </div>
                     </div>
 					<div class="form-group col-lg-12 text-right">
-			<button type="submit" class="btn btn-default" onclick="javascript:if(confirm('Confirma a inclusão do agendamento?')) alert('O agendamento foi realizado com sucesso!')"  title="Salvar">Salvar</button>
-			<button type="submit" class="btn btn-default" onclick="javascript:if(confirm('Ao completar essa ação todos os dados serão perdidos, deseja continuar? ')) alert('O agendamento foi realizado com sucesso!')" title="Salvar">Cancelar</button>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" title="Salvar">Salvar</button>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalCancel" title="Salvar">Cancelar</button>
 		</div>
 		</div><!-- end wrapper -->
 		
@@ -170,5 +170,89 @@
 	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
 </button>	
 <div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Confirma a alteração do agendamento?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalCobranca">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>O agendamento foi alterado com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalCancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+			<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Ao completar essa ação todos os dados serão perdidos, deseja continuar?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalCobranca" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+			<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>A solicitação de reagendamento está sendo realizada com menos de 24 horas de antecedência da consulta marcada, deseja gerar uma cobrança?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
