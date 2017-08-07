@@ -1,0 +1,245 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pesquisar</h4></div>
+    <div class="panel-body">
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-2">
+			<label for="cpfPaciente">CPF</label>
+			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
+			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="nomePaciente">Nome</label>
+			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
+			<!--<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>-->
+		</div>
+	</div>
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-primary">Pesquisar</button>
+			
+			<a onclick="carregarPagina('FinanceiroIncluirDespesa.html')" href="#">
+			<button type="submit" class="btn btn-primary">Incluir Despesas</button></a>
+		</div>
+	</div>
+		
+	</div>
+  </div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Despesas</h4></div>
+    <div class="panel-body">
+	
+       		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Paciente/Empresa</th>
+						<th>CPF/CNPJ</th>
+						<th>Servico</th>
+						<th>Valor</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Maria</td>
+						<td>333.222.999-44</td>
+						<td>Avaliacao</td>
+						<td>R$ 100,00</td>
+						<td>Pendente</td>
+						<td style="width:100px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar Despesas" onclick="carregarPagina('PacienteProntuario.html')">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Empresa LTDA</td>
+						<td>37486976000126</td>
+						<td>Palestra</td>
+						<td>R$ 300,00</td>
+						<td>Pago</td>
+						<td style="width:100px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Despesas" >
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+																<td>Antonio</td>
+						<td>444.222.999-44</td>
+						<td>Particular</td>
+						<td>R$ 150,00</td>
+						<td>Pendente</td>
+						<td style="width:50px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Despesas">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+				
+		</div>
+	</div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="window.history.back();">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10">
+            <div class="panel panel-primary">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                        Accounts and transactions report
+                    </h2>
+                </div>
+                <div class="panel-body">
+                    <h3>
+                        JONES Alexander
+                    </h3>
+                </div>
+                    <ul class="list-group">
+                    
+                    <li class="list-group-item">
+                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Operation date</th>
+                                <th>Remitter</th>
+                                <th>Beneficiary</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
+                                <td>Smith J. (cash in)</td>
+                                <td>Jonex A.</td>
+                                <td>356.61</td>
+                                <td>Iniital deposit</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
+                                <td>Suzarland TJ.</td>
+                                <td>Smith J.</td>
+                                <td>2000.00</td>
+                                <td>Reward</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
+                                <td>Smith J.</td>
+                                <td>Smith M.</td>
+                                <td>100.00</td>
+                                <td>funds transfer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+               
+                    <li class="list-group-item">
+                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Operation date</th>
+                                <th>Remitter</th>
+                                <th>Beneficiary</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
+                                <td>Smith J. (cash in)</td>
+                                <td>Jonex A.</td>
+                                <td>356.61</td>
+                                <td>Iniital deposit</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
+                                <td>Suzarland TJ.</td>
+                                <td>Smith J.</td>
+                                <td>2000.00</td>
+                                <td>Reward</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
+                                <td>Smith J.</td>
+                                <td>Smith M.</td>
+                                <td>100.00</td>
+                                <td>funds transfer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    
+                    <li class="list-group-item">
+                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Operation date</th>
+                                <th>Remitter</th>
+                                <th>Beneficiary</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
+                                <td>Smith J. (cash in)</td>
+                                <td>Jonex A.</td>
+                                <td>356.61</td>
+                                <td>Iniital deposit</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
+                                <td>Suzarland TJ.</td>
+                                <td>Smith J.</td>
+                                <td>2000.00</td>
+                                <td>Reward</td>
+                            </tr>
+                            <tr>
+                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
+                                <td>Smith J.</td>
+                                <td>Smith M.</td>
+                                <td>100.00</td>
+                                <td>funds transfer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
