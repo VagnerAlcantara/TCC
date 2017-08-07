@@ -98,8 +98,22 @@
               <ul class="dropdown-menu">
                 <!--<li><a href="#">Cadastrar pagamentos realizados</a></li>
                 <li><a href="#">Cadastrar pendências de pagamentos</a></li>-->
-				<li>
-<a onclick="carregarPagina('FinanceiroPagamentos.html')" href="#">Pagamentos</a></li>
+				<li class="dropdown-submenu">
+					<a tabindex="-1" href="#">Pagamentos</a>
+					<ul class="dropdown-menu">
+					  <li><a tabindex="-1" href="#">Registrar pagamento</a></li>
+					  <!--<li class="dropdown-submenu">
+						<a href="#">Even More..</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">3rd level</a></li>
+							<li><a href="#">3rd level</a></li>
+						</ul>
+					  </li> 
+					  <li><a href="#">Second level</a></li>
+					  <li><a href="#">Second level</a></li>-->
+					</ul>
+				  </li>
+				<!--<li><a onclick="carregarPagina('FinanceiroPagamentos.html')" href="#">Pagamentos</a></li> -->
 				<li><a onclick="carregarPagina('FinanceiroCobranças.html')" href="#">Cobranças</a></li>
 				<li><a onclick="carregarPagina('FinanceiroDespesas.html')" href="#">Despesas</a></li>
 
@@ -126,9 +140,9 @@
             </li>			
 			
           </ul>
-	
+			
         </div><!--/.nav-collapse -->
-		  
+
 
 	            
     </nav>
