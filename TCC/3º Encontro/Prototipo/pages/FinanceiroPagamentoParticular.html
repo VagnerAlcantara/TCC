@@ -19,7 +19,7 @@
 			<button type="submit" class="btn btn-primary">Pesquisar</button>
 
 
-<a onclick="carregarPagina('FinanceiroIncluirPagamentoEmpresa.html')" href="#">
+<a onclick="carregarPagina('FinanceiroIncluirPagamentoParticular.html')" href="#">
 <button type="submit" class="btn btn-primary">Incluir Pagamento</button></a>
 		</div>
 	</div>
@@ -37,11 +37,11 @@
 				<thead>
 					<tr class="active">
 						<th></th>
-						<th>Paciente/Empresa</th>
-						<th>CPF/CNPJ</th>
-						<th>Servico</th>
+						<th>Paciente</th>
+						<th>CPF</th>
+						<th>Servi&ccedil;o</th>
 						<th>Valor</th>
-						<th>Status</th>
+						<th>Situa&ccedil;&atilde;o</th>
 						<th></th>
 					</tr>
 				</thead>
@@ -50,15 +50,23 @@
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
 						<td>Maria</td>
 						<td>333.222.999-44</td>
-						<td>Avaliacao</td>
+						<td>Avalia&ccedil;&atilde;o</td>
 						<td>R$ 100,00</td>
 						<td>Pendente</td>
 						<td style="width:100px">
 
 				
 
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
 <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
 							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 
 
@@ -66,15 +74,23 @@
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>Empresa LTDA</td>
-						<td>37486976000126</td>
-						<td>Palestra</td>
+						<td>Carlos</td>
+						<td>37445670826</td>
+						<td>Avalia&ccedil;&atilde;o</td>
 						<td>R$ 300,00</td>
 						<td>Pago</td>
 						<td style="width:100px">
 
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
 <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
 							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 
 							
@@ -89,8 +105,16 @@
 						<td>Pendente</td>
 						<td style="width:50px">
 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
 							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 
 							
