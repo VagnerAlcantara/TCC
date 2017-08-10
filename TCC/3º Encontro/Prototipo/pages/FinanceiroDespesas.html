@@ -3,13 +3,9 @@
 	<div class="panel-heading"><h4>Pesquisar</h4></div>
     <div class="panel-body">
 	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-2">
-			<label for="cpfPaciente">CPF</label>
-			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
-			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
-		</div>
+		
 		<div class="form-group col-lg-6">
-			<label for="nomePaciente">Nome</label>
+			<label for="nomePaciente">T&iacute;tulo</label>
 			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
 			<!--<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>-->
 		</div>
@@ -36,57 +32,82 @@
 				<thead>
 					<tr class="active">
 						<th></th>
-						<th>Paciente/Empresa</th>
-						<th>CPF/CNPJ</th>
-						<th>Servico</th>
+						<th>T&iacute;tulo</th>
+						<th>Quantidade</th>
+						<th>Motivo</th>
 						<th>Valor</th>
-						<th>Status</th>
+						<th>Situa&ccedil;&atilde;o</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>Maria</td>
-						<td>333.222.999-44</td>
-						<td>Avaliacao</td>
+						<td>Papel Sulfite</td>
+						<td>2</td>
+						<td>Imprimir documentos</td>
 						<td>R$ 100,00</td>
 						<td>Pendente</td>
 						<td style="width:100px">
 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar Despesas" onclick="carregarPagina('PacienteProntuario.html')">
-							  <span class="glyphicon glyphicon-edit"></span>
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes da Despesa">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Despesa" >
+							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Despesa">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>							
 							
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>Empresa LTDA</td>
-						<td>37486976000126</td>
-						<td>Palestra</td>
-						<td>R$ 300,00</td>
+						<td>Estacionamento</td>
+						<td>1</td>
+						<td>Palestra no cliente</td>
+						<td>R$ 20,00</td>
 						<td>Pago</td>
 						<td style="width:100px">
 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Despesas" >
-							  <span class="glyphicon glyphicon-edit"></span>
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes da Despesa">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Despesa" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Despesa">
+							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
 							
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-																<td>Antonio</td>
-						<td>444.222.999-44</td>
-						<td>Particular</td>
-						<td>R$ 150,00</td>
+												
+						<td>Aluguel</td>
+						<td>1</td>
+						<td>Aluguel mensal da cl&iacute;nica</td>
+						<td>R$ 800,00</td>
 						<td>Pendente</td>
-						<td style="width:50px">
+						<td style="width:170px">
 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar Despesas">
-							  <span class="glyphicon glyphicon-edit"></span>
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes da Despesa">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Despesa" >
+							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Despesa">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>							
 							
 						</td>
 					</tr>
@@ -107,134 +128,6 @@
 
 
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-xs-10">
-            <div class="panel panel-primary">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h2 class="panel-title">
-                        Accounts and transactions report
-                    </h2>
-                </div>
-                <div class="panel-body">
-                    <h3>
-                        JONES Alexander
-                    </h3>
-                </div>
-                    <ul class="list-group">
-                    
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </li>
-               
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </li>
-                    
-                    <li class="list-group-item">
-                    <h4>Account # 1364672 (current debit:: $356.61)</h4>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Operation date</th>
-                                <th>Remitter</th>
-                                <th>Beneficiary</th>
-                                <th>Amount</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wed Nov 12 17:43:13 MSK 2014</td>
-                                <td>Smith J. (cash in)</td>
-                                <td>Jonex A.</td>
-                                <td>356.61</td>
-                                <td>Iniital deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 13 12:41:13 MSK 2014</td>
-                                <td>Suzarland TJ.</td>
-                                <td>Smith J.</td>
-                                <td>2000.00</td>
-                                <td>Reward</td>
-                            </tr>
-                            <tr>
-                                <td>Wed Nov 15 07:43:13 MSK 2014</td>
-                                <td>Smith J.</td>
-                                <td>Smith M.</td>
-                                <td>100.00</td>
-                                <td>funds transfer</td>
-                            </tr>
                         </tbody>
                     </table>
                     </li>
