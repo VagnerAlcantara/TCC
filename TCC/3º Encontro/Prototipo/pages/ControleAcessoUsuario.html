@@ -1,12 +1,12 @@
 <div class="panel-group">
   <div class="panel panel-default">
-	<div class="panel-heading"><h4>Pesquisar</h4></div>
+	<div class="panel-heading"><h4>Manutenção de Usuários - Pesquisar</h4></div>
     <div class="panel-body">
 	<div class="form-group col-lg-12">
 		<div class="form-group col-lg-2">
-			<label for="cpfPaciente">CPF</label>
+			<label for="cpfPaciente">Id</label>
 			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
-			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
+			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Digite um id de usuário para a busca</small> -->
 		</div>
 		<div class="form-group col-lg-6">
 			<label for="nomePaciente">Nome</label>
@@ -34,7 +34,7 @@
 				<thead>
 					<tr class="active">
 						<th></th>
-						<th>CPF</th>
+						<th>Id</th>
 						<th>Nome</th>
 						<th></th>
 					</tr>
@@ -42,9 +42,9 @@
 				<tbody>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>333.222.999-44</td>
-						<td>João </td>
-						<td style="width:170px">
+						<td>joaosilva</td>
+						<td>João da Silva</td>
+						<td style="width:200px">
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Detalhar" >
 							  <span class="glyphicon glyphicon-zoom-in"></span>
 							</button>
@@ -59,14 +59,17 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar" ">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+                                                        <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha" ">
+							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>333.222.999-44</td>
-						<td>João </td>
-						<td style="width:170px">
+						<td>mariasan<//td>
+						<td>Maria S. Santos</td>
+						<td style="width:200px">
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Detalhar" >
 							  <span class="glyphicon glyphicon-zoom-in"></span>
 							</button>
@@ -81,14 +84,17 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar" ">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+                                                        <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha" ">
+							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td>333.222.999-44</td>
-						<td>João </td>
-						<td style="width:170px">
+						<td>alexsilva</td>
+						<td>Alexandre Silva</td>
+						<td style="width:200px">
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Detalhar" >
 							  <span class="glyphicon glyphicon-zoom-in"></span>
 							</button>
@@ -103,6 +109,9 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar" ">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+                                                        <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha" ">
+							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
 					</tr>
@@ -116,7 +125,7 @@
   </div>
 </div>
 <div class="form-group col-lg-15 text-right">
-<button type="button" class="btn btn-default " onclick="window.history.back();">
+<button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
 	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
 </button>	
 <div>
