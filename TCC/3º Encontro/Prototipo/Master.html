@@ -62,7 +62,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="#" id ="btnLogout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -287,7 +287,9 @@
                 $('#pagePsystem').load('pages/'+page);
             }
         }
-
+	document.getElementById("btnLogout").onclick = function () {
+        location.href = "Login.html";
+    };
 	
 
     </script>
