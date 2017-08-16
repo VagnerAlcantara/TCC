@@ -1,0 +1,135 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pesquisar</h4></div>
+    <div class="panel-body">
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-2">
+			<label for="cpfPaciente">CNPJ</label>
+			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
+			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="nomePaciente">Empresa</label>
+			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
+			<!--<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>-->
+		</div>
+	</div>
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-primary">Pesquisar</button>
+
+
+<a onclick="carregarPagina('FinanceiroIncluirPagamentoPalestra.html')" href="#">
+<button type="submit" class="btn btn-primary">Incluir Pagamento</button></a>
+		</div>
+	</div>
+		
+	</div>
+  </div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pagamentos</h4></div>
+    <div class="panel-body">
+	
+       		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Empresa</th>
+						<th>CNPJ</th>
+						<th>Tema</th>
+						<th>Valor</th>
+						<th>Situa&ccedil;&atilde;o</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Maria</td>
+						<td>333.222.999-44</td>
+						<td>Sa&uacute;de Mental</td>
+						<td>R$ 100,00</td>
+						<td>Pendente</td>
+						<td style="width:100px">
+
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+
+
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>Empresa LTDA</td>
+						<td>37486976000126</td>
+						<td>Motivacional</td>
+						<td>R$ 300,00</td>
+						<td>Pago</td>
+						<td style="width:100px">
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+							
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+																<td>Antonio</td>
+						<td>444.222.999-44</td>
+						<td>Comportamental</td>
+						<td>R$ 150,00</td>
+						<td>Pendente</td>
+						<td style="width:170px">
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do Pagamento">
+							  <span class="glyphicon glyphicon-eye-open"></span></button>
+				
+
+<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar Pagamento" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Deletar Pagamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+
+							
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+				
+		</div>
+	</div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="window.history.back();">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>

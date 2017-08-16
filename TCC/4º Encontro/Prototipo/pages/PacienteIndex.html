@@ -1,0 +1,108 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pesquisar</h4></div>
+    <div class="panel-body">
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-2">
+			<label for="cpfPaciente">CPF</label>
+			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
+			<!--<small id="cpfPacienteHelp" class="form-text text-muted">Informe o CPF sem traços e ponto</small> -->
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="nomePaciente">Nome</label>
+			<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" />
+			<!--<small id="nomePacienteHelp" class="form-text text-muted">Informe o nome completo ou parte para uma busca aproximada</small>-->
+		</div>
+	</div>
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-primary">Pesquisar</button>
+			<button type="submit" class="btn btn-primary">Novo paciente</button>
+		</div>
+	</div>
+		
+	</div>
+  </div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Resultado</h4></div>
+    <div class="panel-body">
+	
+       		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>CPF</th>
+						<th>Paciente</th>
+						<th>E-mail</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>333.222.999-44</td>
+						<td>João </td>
+						<td>email@email.com </td>
+						<td style="width:170px">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaPaciente.html')" >
+							  <span class="glyphicon glyphicon-calendar"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar prontuário" onclick="carregarPagina('PacienteProntuario.html')">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Emitir laudo" onclick="carregarPagina('PacienteLaudo.html')">
+							  <span class="glyphicon glyphicon-thumbs-up"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>333.222.999-44</td>
+						<td>João </td>
+						<td>email@email.com </td>
+						<td style="width:170px">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaPaciente.html')">
+							  <span class="glyphicon glyphicon-calendar"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar prontuário" >
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEmitirLaudo" title="Emitir laudo">
+							  <span class="glyphicon glyphicon-thumbs-up"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+						<td>333.222.999-44</td>
+						<td>João </td>
+						<td>email@email.com </td>
+						<td style="width:170px">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaPaciente.html')">
+							  <span class="glyphicon glyphicon-calendar"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEditarProntuario" title="Editar prontuário">
+							  <span class="glyphicon glyphicon-edit"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalEmitirLaudo" title="Emitir laudo">
+							  <span class="glyphicon glyphicon-thumbs-up"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+				
+		</div>
+	</div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="window.history.back();">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>
