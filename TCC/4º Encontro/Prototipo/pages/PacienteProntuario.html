@@ -24,11 +24,8 @@
 				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(XX) XXXX-XXX"/>
 			</div>
 			<div class="form-group col-lg-2">
-				<label for="sexoPaciente">Sexo</label></br>
-				<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-				  <option value="fem">Feminino</option>
-				  <option value="masc">Masculino</option>
-				</select>
+				<label for="telefonePaciente">Sexo</label>
+				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="Feminino"/>
 			</div>
 			<div class="form-group col-lg-8">
 				<label for="nomeEmpresa">Endereço</label>
@@ -64,17 +61,23 @@
 		</div>
 	</div>
   </div>
+
   
   <!-- Histórico -->
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Prontuário</h4></div>
-    <div class="panel-body">			
-		<div class="form-group">
-            <label>Resumo último atendimento</label>
+    <div class="panel-body">
+		<div class="form-group col-lg-2">
+			<label for="dataNascimento" style="font-size:11px">Data do atendimento</label>
+			<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="01/01/1900"/>
+		</div>
+		<div class="form-group col-lg-12">
+            <label>Detalhes do atendimento</label>
             <textarea class="form-control" rows="3"></textarea>
         </div>
 		<div class="form-group col-lg-12">
 		<div class="form-group col-lg-12 text-right">
+			<button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModalExcluirProntuario" title="Excluir">Excluir</button>
 			<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessEmail" title="Enviar por E-mail">Enviar por E-mail</button>
 			<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalConfirmaImpressao" title="Imprimir">Imprimir</button>
 			<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessSalvar" title="Salvar" >Salvar</button>
@@ -174,3 +177,43 @@
 </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModalExcluirProntuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-danger"><strong> Aviso!</strong></p>
+				<p>Confirmar a exclusão do prontuário?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalProntuarioExcluido">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalProntuarioExcluido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>Prontuário excluído com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-default" onclick="carregarPagina('PacienteIndex.html')">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
