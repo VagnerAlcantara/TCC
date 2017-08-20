@@ -292,7 +292,13 @@
         location.href = "Login.html";
     };
 	
-	
+    
+	function novoPaciente(){
+        $('#myModalPacienteNaoEncontrado').on("hidden.bs.modal", function () {
+            carregarPagina('PacienteIncluir.html');
+        });
+        //
+	};
 
 
     </script>
