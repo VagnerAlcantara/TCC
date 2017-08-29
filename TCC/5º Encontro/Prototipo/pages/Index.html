@@ -1,0 +1,336 @@
+<div class="panel">
+<div class="panel-body">
+<div class="row">
+	<ul class="nav navbar-right top-nav">
+	
+		<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-plus"></i> Novo agendamento <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a onclick="carregarPagina('PacienteIndex.html')" href="#"><i class="glyphicon glyphicon-user"></i> Paciente</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a onclick="carregarPagina('EmpresaIndex.html')" href="#"><i class="glyphicon glyphicon-briefcase"></i> Empresa</a>
+                        </li>
+                    </ul>
+                </li>
+    </ul>
+    
+	<ul class="nav navbar-right top-nav">
+		<li class="dropdown">
+			<a onclick="carregarPagina('AgendaFiltro.html')" href="#"><i class="glyphicon glyphicon-search"></i> Filtrar agendamentos</a>
+		</li>
+    </ul>
+</div></div></div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Agenda do dia</h3>
+	</div>
+	<div class="panel-body">
+			<label for="dtAgenda">Selecione uma data</label>
+			<div class='input-group date col-xs-2' id='datetimepicker1' >
+				<input type='date' id="dtAgenda" class="form-control datepicker" value="01/01/1900"/>
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+			</div>
+			</br>
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Horário</th>
+						<th>Paciente</th>
+						<th>Serviço</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>08:00</td>
+						<td>João </td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>09:00</td>
+						<td>Maria </td>
+						<td>Análise Clínica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>10:00</td>
+						<td>Maria </td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>11:00</td>
+						<td>Maria </td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>13:00</td>
+						<td>Maria </td>
+						<td>Análise Clínica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>14:00</td>
+						<td>Empresa Xpto </td>
+						<td>Palestra </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
+      </div>
+      <div class="modal-body">
+                <div class="panel-group">
+				  <div class="panel panel-default">
+						<div class="panel-body">
+						<fieldset disabled>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Nome</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="João" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">CPF</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="XXX.XXX.XXX-XX" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Data Nascimento</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="01/01/1990" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Telefone</label>
+							  <div class="col-xs-5">
+								<input class="form-control" type="text" value="(XX)XXXXX-XXXX" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Empresa</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="Empresa" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Observação</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="textarea" value="Informações adiconais " id="example-text-input">
+							  </div>
+							</div>
+						</fieldset>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalCancelarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Confirma o cancelamento do agendamento?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal" onclick="carregarPagina('Agenda.html')">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>O agendamento foi cancelado com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalConfirmarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Deseja confirmar o agendamento?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessConfirmacao">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="myModalSuccessConfirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>O agendamento foi confirmado com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

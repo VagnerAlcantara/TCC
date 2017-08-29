@@ -1,0 +1,333 @@
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Pesquisar</h4></div>
+    <div class="panel-body">
+	
+	
+	<div class="form-group col-lg-12">
+		<div class="form-group col-lg-12">
+			<div class="form-group">
+				<label class="radio-inline">
+					<input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="" type="radio" onchange="undisableFieldset()" >Todos
+				</label>
+				<label class="radio-inline">
+					<input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" onchange="disableField()">Apenas horários disponíveis
+				</label>
+			</div>
+		</div>
+			<div class="form-group col-lg-2">
+				<label for="cpfPaciente">CPF</label>
+				<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="" aria-describedby="cpfPacienteHelp"/>
+			</div>
+			<div class="form-group col-lg-6">
+				<label for="nomePaciente">Nome</label>
+				<input type="text" class="form-control input-small" id="nomePaciente" value="" aria-describedby="nomePacienteHelp"/>
+			</div>
+
+			<div class="form-group col-lg-3">
+					<label for="cboServico">Serviço</label></br>
+					<select class="form-control input-small" id="cboServico" aria-describedby="cboServicoHelp">
+					  <option value="selecione">Selecione</option>
+					  <option value="fem">Palestra</option>
+					  <option value="masc">Consulta</option>
+					</select>
+			</div>
+		<div class="form-group col-lg-3">
+			<label for="dtFim">Data início</label>
+			<div class='input-group date col-xs-9' id='dtInicio'>
+				<input type='date' class="form-control datepicker " value="01/01/1900"/>
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+			</div>
+		</div>
+		<div class="form-group col-lg-3">
+			<label for="dtFim">Data fim</label>
+			<div class='input-group date col-xs-9' id='dtFim'>
+				<input type='date' class="form-control datepicker" value="01/02/1900" />
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+			</div>
+		</div>
+		
+		<div class="form-group col-lg-12 text-right">
+			<button type="submit" class="btn btn-primary">Pesquisar</button>
+			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
+			<!--<a onclick="carregarPagina('AgendaIncluir.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>-->
+		</div>
+	</div>
+		
+	</div>
+  </div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+	<div class="panel-heading"><h4>Resultado</h4></div>
+    <div class="panel-body">
+	
+       		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Data</th>
+						<th>Horário</th>
+						<th>Serviço</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>01/01/1900 </td>
+						<td>08:00</td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+						<td>01/01/1900 </td>
+						<td>08:00</td>
+						<td>Palestra </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
+						<td>01/01/1900 </td>
+						<td>08:00</td>
+						<td>Avaliação Psicológica </td>
+						<td style="width:170px"> 
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('PacienteAtender.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Detalhes do agendamento">
+							  <span class="glyphicon glyphicon-eye-open"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							  <span class="glyphicon glyphicon-pencil"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+				
+		</div>
+	</div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
+      </div>
+      <div class="modal-body">
+                <div class="panel-group">
+				  <div class="panel panel-default">
+						<div class="panel-body">
+						<fieldset disabled>
+							<div class="page-header">
+								<h4>Dados pessoais</h4>
+							</div>
+							<div class="form-group col-lg-12">
+								<label for="nomePaciente">Nome</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria dos Santos"/>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="dataNascimento">Data Nascimento</label>
+								<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="15/03/1978"/>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="nomePaciente">Sexo</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Feminino"/>
+							</div>
+							
+							<div class="form-group col-lg-4">
+								<label for="rgPaciente">RG</label>
+								<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="40.444.555-8"/>
+							</div>
+							<div class="form-group col-lg-4">
+								<label for="cpfPaciente">CPF</label>
+								<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="999.666.555-88"/>
+							</div>
+							<div class="form-group col-lg-4">
+								<label for="telefonePaciente">Telefone</label>
+								<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 9999-5555"/>
+							</div>
+							
+							<div class="page-header">
+								<h4>Agedamento</h4>
+							</div>
+							<div class="form-group col-lg-4">
+								<label for="nomePaciente">Serviço</label>
+								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Consulta"/>
+							</div>
+							
+							<div class="form-group col-lg-8">
+								<label for="dtFim">Data/ hora</label>
+								<div class='input-group date col-xs-8' id='dtFim'>
+									<input type='date' class="form-control datepicker" value="01/01/1900 08:00" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+							
+						</fieldset>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+<button type="button" class="btn btn-default " onclick="window.history.back();">
+	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
+</button>	
+<div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalCancelarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Confirma o cancelamento do agendamento?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal" onclick="carregarPagina('Agenda.html')">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>O agendamento foi cancelado com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalConfirmarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default ">
+			<div class="panel-body text-left ">
+				<p class="alert alert-warning"><strong> Aviso!</strong></p>
+				<p>Deseja confirmar o agendamento?</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessConfirmacao">Sim</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="myModalSuccessConfirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="panel-group ">
+		<div class="panel panel-default">
+		
+			<div class="panel-body text-left">
+				<p class="alert alert-success"><strong> Aviso!</strong></p>
+				<p>O agendamento foi confirmado com sucesso!</p>
+			</div>
+		</div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function disableField() {
+    document.getElementById("cboServico").disabled = true;
+	document.getElementById("nomePaciente").disabled = true;
+	document.getElementById("cpfPaciente").disabled = true;
+}
+
+function undisableFieldset() {
+    document.getElementById("cboServico").disabled = false;
+	document.getElementById("nomePaciente").disabled = false;
+	document.getElementById("cpfPaciente").disabled = false;
+}
+</script>
