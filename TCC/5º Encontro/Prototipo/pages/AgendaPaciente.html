@@ -5,13 +5,29 @@
 	<fieldset disabled>
 	<div class="form-group col-lg-12">
 		<div class="form-group col-lg-2">
-			<label for="cpfPaciente">CPF</label>
-			<input type="text" class="form-control input-small col-xs-12" id="cpfPaciente" value="333.222.999-44" aria-describedby="cpfPacienteHelp"/>
-		</div>
-		<div class="form-group col-lg-6">
-			<label for="nomePaciente">Nome</label>
-			<input type="text" class="form-control input-small" id="nomePaciente" value="João da silva" aria-describedby="nomePacienteHelp"/>
-		</div>
+				<label for="cpfPaciente">CPF</label>
+				<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="222.333.444-55"/>
+			</div>
+			<div class="form-group col-lg-10">
+				<label for="nomePaciente">Nome</label>
+				<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="dataNascimento">Data Nascimento</label>
+				<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="01/01/1900"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="rgPaciente">RG</label>
+				<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="40.555.888-8"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="telefonePaciente">Telefone</label>
+				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 2222-3233"/>
+			</div>
+			<div class="form-group col-lg-2">
+				<label for="telefonePaciente">Sexo</label>
+				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="Feminino"/>
+			</div>
 	</div>
 	</fieldset>
 	<div class="form-group col-lg-12">
@@ -34,8 +50,8 @@
 			</div>
 		</div>
 		<div class="form-group col-lg-12 text-right">
-			<button type="submit" class="btn btn-primary">Pesquisar</button>
-			<button type="submit" class="btn btn-primary" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
+			<button type="submit" class="btn btn-default">Pesquisar</button>
+			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
 			<!--<a onclick="carregarPagina('AgendaIncluir.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>-->
 		</div>
 	</div>
