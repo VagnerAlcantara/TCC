@@ -4,50 +4,50 @@
       <div class="panel-body">
               <div class="form-group col-lg-2">
                   <label for="cnpjEmpresa">CNPJ</label>
-                  <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="" />
               </div>
               <div class="form-group col-lg-10">
                   <label for="nomeEmpresa">Razão social</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
               </div>
               <div class="form-group col-lg-2">
                   <label for="telefoneEmpresa">Telefone</label>
-                  <input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value="(XX) XXXX-XXX" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-10">
                   <label for="emailEmpresa">E-mail</label></br>
-                  <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-8">
                   <label for="nomeEmpresa">Endereço</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Rua A" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-1">
                   <label for="nomeEmpresa">Número</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-1">
                   <label for="nomeEmpresa">Comp.</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
               </div>
               <div class="form-group col-lg-2">
                   <label for="nomeEmpresa">CEP</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00000-000" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-6">
                   <label for="nomeEmpresa">Bairro</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Centro" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-3">
                   <label for="nomeEmpresa">Cidade</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="São Paulo" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-1">
                   <label for="nomeEmpresa">Estado</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="SP" disabled="disabled"/>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
               </div>
               <div class="form-group col-lg-2">
-                  <label for="nomeEmpresa">Parceira</label><br />
+                  <label for="nomeEmpresaAtende">Atende</label><br />
                   <label class="radio-inline">
                         <input type="radio" name="optradio" disabled="disabled" checked>SIM
                     </label>
@@ -55,6 +55,21 @@
                         <input type="radio" name="optradio" disabled="disabled">NÃO
                     </label>
               </div>
+              <div class="form-group col-lg-6">
+                  <label for="nomeServico">Serviços</label>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
+              </div>
+              <div class="form-group col-lg-4">
+                  <label for="nomeAtenteServico">Atende</label><br />
+                  <label class="radio-inline">
+                        <input type="radio" name="optradio" disabled="disabled" checked>SIM
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" disabled="disabled">NÃO
+                    </label>
+                    <button type="button" class="glyphicon glyphicon-plus-sign" title="Incluir"/>
+              </div>
+              
           <div class="form-group col-lg-12 text-right">
               <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessSalvar" title="Salvar dados">Salvar</button>
           </div>
@@ -68,7 +83,16 @@
   </button>	
   <div>
   
-  
+<script>
+    function myFunction() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+    }
+</script>
   
   <div class="modal fade" id="myModalSuccessEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

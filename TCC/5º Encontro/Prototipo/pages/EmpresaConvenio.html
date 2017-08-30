@@ -1,16 +1,16 @@
 <div class="panel-group">
     <div class="panel panel-default">
-      <div class="panel-heading"><h4>Pesquisar</h4></div>
+      <div class="panel-heading"><h4>Pesquisar Convênio</h4></div>
       <div class="panel-body">
       <div class="form-group col-lg-12">
           <div class="form-group col-lg-2">
-            <b>CNPJ</b>
+            <b>Convênio</b>
             <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" />
           </div>
           <div class="form-group col-lg-6 ">
             </br>
               <button type="submit" class="btn btn-default">Pesquisar</button>
-              <button type="submit" class="btn btn-default" onclick="carregarPagina('EmpresaNova.html')">Nova Empresa</button>
+              <button type="submit" class="btn btn-default" onclick="carregarPagina('EmpresaConvenioNovo.html')">Novo</button>
           </div>
       </div>
       </div>
@@ -27,9 +27,8 @@
                       <tr class="active">
                           <th></th>
                           <th>CPNJ</th>
-                          <th>Razão Social</th>
+                          <th>Convênio</th>
                           <th>E-mail</th>
-                          <th>Parceira</th>
                           <th></th>
                       </tr>
                   </thead>
@@ -37,11 +36,10 @@
                       <tr>
                           <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
                           <td style="width:100px">11.222.333/0000-11</td>
-                          <td style="width:150px">Empresa XPTO </td>
+                          <td style="width:150px">Saúde</td>
                           <td style="width:150px">email@email.com </td>
-                          <td style="width:150px">SIM</td>
                           <td style="width:200px">
-                            <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('PacienteConsultar.html')">
+                            <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('EmpresaConvenioDetalhes.html')">
                               <span class="glyphicon glyphicon-eye-open"></span>
                             </button>
                             <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('EmpresaEditar.html')" >

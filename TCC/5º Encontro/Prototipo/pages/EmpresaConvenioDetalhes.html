@@ -1,14 +1,14 @@
 <div class="panel-group">
     <div class="panel panel-default">
-      <div class="panel-heading"><h4>Dados Empresarias</h4></div>
+      <div class="panel-heading"><h4>Dados do Convênio</h4></div>
       <div class="panel-body">
               <div class="form-group col-lg-2">
                   <label for="cnpjEmpresa">CNPJ</label>
                   <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11" disabled="disabled"/>
               </div>
               <div class="form-group col-lg-10">
-                  <label for="nomeEmpresa">Razão social</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO" disabled="disabled"/>
+                  <label for="nomeEmpresa">Convênio</label>
+                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Saúde" disabled="disabled"/>
               </div>
               <div class="form-group col-lg-2">
                   <label for="telefoneEmpresa">Telefone</label>
@@ -47,13 +47,33 @@
                   <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="SP" disabled="disabled"/>
               </div>
               <div class="form-group col-lg-2">
-                  <label for="nomeEmpresa">Parceira</label><br />
+                  <label for="nomeEmpresa">Atende</label><br />
                   <label class="radio-inline">
                         <input type="radio" name="optradio" disabled="disabled" checked>SIM
                     </label>
                     <label class="radio-inline">
                         <input type="radio" name="optradio" disabled="disabled">NÃO
                     </label>
+              </div>
+              <div class="form-group col-lg-12">
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Atende</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Avaliação</td>
+                            <td>SIM</td>
+                        </tr>
+                        <tr>
+                            <td>Psicanalise</td>
+                            <td>SIM</td>
+                        </tr>
+                    </tbody>
+                </table>
               </div>
           <div class="form-group col-lg-12 text-right">
               <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessSalvar" title="Salvar dados">Salvar</button>
