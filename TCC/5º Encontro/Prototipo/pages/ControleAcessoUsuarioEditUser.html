@@ -1,52 +1,51 @@
 <div class="panel-group">
   <div class="panel panel-default">
-	<div class="panel-heading"><h4>Alterar Dados de nataliarosetto</h4></div>
+	<div class="panel-heading"><h4>Dados do Usuário</h4></div>
     <div class="panel-body">
-		<fieldset disabled>
+			
+				<div class="form-group col-lg-2">
+					<fieldset disabled>
+					<label for="cpfPaciente">CPF</label>
+					<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="222.333.444-55"/>
+					</fieldset>
+				</div>
+			
+			<div class="form-group col-lg-10">
+				<label for="nomePaciente">Nome</label>
+				<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria"/>
+			</div>
 			<div class="form-group col-lg-2">
-				<label for="cpfUsuario">CPF</label>
-				<input type="text" class="form-control input-small" id="cpfUsuario" aria-describedby="cpfUsuarioHelp" value="XXX.XXX.XXX-XX"/>
-                        </div>
-                        </fieldset>
-                        <fieldset enabled>
-                        <div class="form-group col-lg-2">
 				<label for="sexoPaciente">Perfil</label></br>
 				<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-				  <option value="fem">Administrador</option>
-				  <option value="masc">Secretária</option>
+					<option value="fem">Administrador</option>
+					<option value="masc">Secretária</option>
 				</select>
 			</div>                        
-                        <div class="form-group col-lg-2">
+			<div class="form-group col-lg-2">
 				<label for="sexoPaciente">Status</label></br>
 				<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-				  <option value="fem">Ativo</option>
-				  <option value="masc">Inativo</option>
+					<option value="fem">Ativo</option>
+					<option value="masc">Inativo</option>
 				</select>
 			</div>	
-                        <div class="form-group col-lg-10">
-				<label for="nomePaciente">Nome</label>
-				<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Natalia Rosetto "/>
+			
+			<div class="form-group col-lg-10">
+				<label for="nomePaciente">Observações</label>
+				<textarea class="form-control" rows="3">- Psicóloga - cadastrada durante testes de implantação.</textarea>
 			</div>
-                        </fieldset>
-			<fieldset enable>       
-                <div class="form-group">
-            <label>Observa&ccedil;&otilde;es</label>
-            <textarea value="1" class="form-control" rows="3">- Psicóloga - cadastrada durante testes de implanta&ccedilão</textarea>
-        </div>
-	</fieldset>
-		
+			<div class="form-group col-lg-12 text-right">
+				<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessEdit" title="Salvar">Salvar</button>	
+    	</div>
+		</div>
 	</div>
-	
-  </div>
 </div>
-<div class="form-group col-lg-15 text-right">
-<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessEdit" title="Enviar por E-mail">Salvar</button>	
-
-<button type="button" class="btn btn-default " onclick="carregarPagina('ControleAcessoUsuario.html')">Cancelar</button>	
-
-
-
-
+  <div class="form-group col-lg-15 text-right">
+  <button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
+      <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+  </button>	
+  <div>
+  
+</div>
 
 <div class="modal fade" id="myModalSuccessEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -61,69 +60,7 @@
 			</div>
 		</div>
       <div class="modal-footer">
-		<button type="button" onclick="carregarPagina('ControleAcessoUsuario.html')">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="modal fade" id="myModalSuccessSalvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default">
-		
-			<div class="panel-body text-left">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>Prontuário salvo com sucesso!</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModalConfirmaImpressao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Confirma impressão do prontuário?</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessImpressao">Sim</button>
-		<button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Modal -->
-
-<div class="modal fade" id="myModalSuccessImpressao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default">
-		
-			<div class="panel-body text-left">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>Prontuário enviado com sucesso para impressão!</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
