@@ -59,7 +59,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar">
 							  <span class="glyphicon glyphicon-chevron-down"></span>
 							</button>
-              <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha">
+              <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalUsuarioResetarSenha"  title="Resetar senha">
 							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
@@ -84,7 +84,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar">
 							  <span class="glyphicon glyphicon-chevron-down"></span>
 							</button>
-              <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha">
+              <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalUsuarioResetarSenha"  title="Resetar senha">
 							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
@@ -109,7 +109,7 @@
 							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Inativar">
 							  <span class="glyphicon glyphicon-chevron-down"></span>
 							</button>
-              <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Resetar senha">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalUsuarioResetarSenha"  title="Resetar senha">
 							  <span class="glyphicon glyphicon-refresh"></span>
 							</button>
 						</td>
@@ -129,160 +129,30 @@
 </button>	
 <div>
 </div>
-<div>
 <!-- Modal -->
-<div class="modal fade" id="myModalPacienteNaoEncontrado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModalUsuarioResetarSenha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-
       <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Paciente não cadastrado, selecione "Sim" para cadastrar.</p>
+				<div class="panel-heading"><h4>Resetar Senha</h4></div>
+      	<div class="panel-body">
+        	<div class="form-group col-lg-7">
+          	<label for="cnpjEmpresa">Digite a senha</label>
+            <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value=""/>
+          </div>
+          <div class="form-group col-lg-7">
+          	<label for="nomeEmpresa">Confirme a senha</label>
+            <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value=""/>
+          </div>
+				</div>
 			</div>
-		</div>
       <div class="modal-footer">
-				<button type="buttoesn" class="btn btn-default" data-dismiss="modal" onclick="novoPaciente()" >Sim</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Resetar</button>
       </div>
     </div>
   </div>
 </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="myModalExcluirUsuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Confirmar a exclusão do usuário?</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalUsuarioExcluido">Sim</button>
-		<button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModalUsuarioExcluido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>Usuário excluído com sucesso!</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-		
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="modal fade" id="myModalUsuarioReset_" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-success"><strong> Reset de Senha</strong></p>
-                        <form action="Script_do_Formulario.php" method="post">
-
-<!-- DADOS PESSOAIS-->
-<fieldset>
- <legend>Resetar senha de alexsilva</legend>
- <table cellspacing="7" border-spacing="8px">
-  <tr>
-   <td>
-    <label for="nome">Digite a senha: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="email">
-   </td>
-  </tr>
-<tr><td><br></td><td><br></td></tr>
-  <tr>
-   <td>
-    <label for="sobrenome">Confirme a senha: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="sobrenome">
-   </td>
-  </tr>
- </table>
-</fieldset>
-</form>
-
-                   		
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-		
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- teste reset -->
-<div class="modal fade" id="myModalUsuarioReset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> </strong>Resetar Senha</p>
-				<form action="Script_do_Formulario.php" method="post">
-
-<!-- DADOS PESSOAIS-->
-<fieldset>
- <legend>Usuário: alexsilva</legend>
- <table cellspacing="7">
-  <tr>
-   <td>
-    <label for="nome">Digite a senha: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="email">
-   </td>
-  </tr>
-<tr><td><br></td><td><br></td></tr>
-  <tr>
-   <td>
-    <label for="sobrenome">Confirme a senha: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="sobrenome">
-   </td>
-  </tr>
- </table>
-</fieldset>
-</form>
-
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalUsuarioResetado">Gravar</button>
-		<button type="button" class="btn btn-default" data-dismiss="modal" >Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Modal -->
 <div class="modal fade" id="myModalUsuarioResetado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -300,5 +170,4 @@
       </div>
     </div>
   </div>
-</div>
 </div>
