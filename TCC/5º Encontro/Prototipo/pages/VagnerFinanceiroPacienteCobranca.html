@@ -2,9 +2,8 @@
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Pesquisar</h4></div>
     <div class="panel-body">
-	<fieldset disabled>
-	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-2">
+		<fieldset disabled>
+			<div class="form-group col-lg-2">
 				<label for="cpfPaciente">CPF</label>
 				<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="222.333.444-55"/>
 			</div>
@@ -28,9 +27,9 @@
 				<label for="telefonePaciente">Sexo</label>
 				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="Feminino"/>
 			</div>
-	</div>
-	</fieldset>
-	<div class="form-group col-lg-12">
+			
+		</fieldset>
+	
 		<div class="form-group col-lg-3">
 			<label for="dtFim">Data início</label>
 			<div class='input-group date col-xs-9' id='dtInicio'>
@@ -51,9 +50,8 @@
 		</div>
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-default">Pesquisar</button>
-			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
 		</div>
-	</div>
+	
 		
 	</div>
   </div>
@@ -62,88 +60,59 @@
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Resultado</h4></div>
     <div class="panel-body">
-	
-       		<div class="table-responsive">
+    <div class="table-responsive">
 			<table class="table table-bordered table-hover table-striped">
 				<thead>
 					<tr class="active">
 						<th></th>
-						<th style="width:100px">Data</th>
-						<th style="width:100px">Horário</th>
-						<th style="width:150px">Serviço</th>
+						<th>Servico</th>
+						<th>Valor</th>
+						<th>Status</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">08:00</td>
-						<td style="width:150px">Avaliação Psicológica </td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
+						<td style="width:25px"><i class="glyphicon glyphicon-piggy-bank"></i></td>
+						<td style="width:100px">Avaliacao</td>
+						<td style="width:100px">R$ 100,00</td>
+						<td style="width:100px">Pendente</td>
+						<td style="width:200px">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('PacienteConsultar.html')">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('PacienteEditar.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalExcluirPaciente"  title="Excluir paciente">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Realizar Pagamento" onclick="carregarPagina('VagnerFinanceiroPacienteCobrancaIncluir.html')">
+							  <span class="glyphicon glyphicon-thumbs-up"></span>
 							</button>
 						</td>
 					</tr>
 					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">08:00</td>
-						<td style="width:150px">Avaliação Psicológica </td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
+						<td style="width:25px"><i class="glyphicon glyphicon-piggy-bank"></i></td>
+						<td style="width:100px">Avaliacao</td>
+						<td style="width:100px">R$ 100,00</td>
+						<td style="width:100px">Pendente</td>
+						<td style="width:200px">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('PacienteConsultar.html')">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('PacienteEditar.html')" >
 							  <span class="glyphicon glyphicon-pencil"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalExcluirPaciente"  title="Excluir paciente">
 							  <span class="glyphicon glyphicon-remove"></span>
 							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Realizar Pagamento" onclick="carregarPagina('VagnerFinanceiroPacienteCobrancaIncluir.html')">
+							  <span class="glyphicon glyphicon-thumbs-up"></span>
 							</button>
 						</td>
 					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-home"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">08:00</td>
-						<td style="width:150px">Avaliação Psicológica </td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
-						</td>
-					</tr>
+					
 				</tbody>
 				
 			</table>

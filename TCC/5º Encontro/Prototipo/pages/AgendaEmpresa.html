@@ -4,14 +4,14 @@
     <div class="panel-body">
 	<fieldset disabled>
 	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-2">
-                  <label for="cnpjEmpresa">CNPJ</label>
-                  <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="XX.XXX.XXX/XXXX-XX"/>
-              </div>
-              <div class="form-group col-lg-10">
-                  <label for="nomeEmpresa">Razão social</label>
-                  <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO"/>
-              </div>
+    <div class="form-group col-lg-2">
+    	<label for="cnpjEmpresa">CNPJ</label>
+      <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11"/>
+    </div>
+    <div class="form-group col-lg-10">
+    	<label for="nomeEmpresa">Razão social</label>
+      <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO"/>
+    </div>
 	</div>
 	</fieldset>
 	<div class="form-group col-lg-12">
@@ -36,7 +36,6 @@
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-default">Pesquisar</button>
 			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
-			<!--<a onclick="carregarPagina('AgendaIncluir.html')" href="#"><i class="glyphicon glyphicon-plus"></i> Novo agendamento</a>-->
 		</div>
 	</div>
 		
@@ -53,25 +52,19 @@
 				<thead>
 					<tr class="active">
 						<th></th>
-						<th>Data</th>
-						<th>Horário</th>
-						<th>Serviço</th>
+						<th style="width:100px">Data</th>
+						<th style="width:100px">Horário</th>
+						<th style="width:150px">Serviço</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>01/01/1900 </td>
-						<td>08:00</td>
-						<td>Palestra </td>
+						<td style="width:100px">01/01/1900 </td>
+						<td style="width:100px">08:00</td>
+						<td style="width:150px">Palestra </td>
 						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
@@ -80,21 +73,21 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
 							</button>
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>01/01/1900 </td>
-						<td>08:00</td>
-						<td>Palestra </td>
+						<td style="width:100px">01/01/1900 </td>
+						<td style="width:100px">11:00</td>
+						<td style="width:150px">Palestra</td>
 						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
@@ -103,21 +96,21 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
 							</button>
 						</td>
 					</tr>
 					<tr>
 						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td>01/01/1900 </td>
-						<td>08:00</td>
-						<td>Palestra </td>
+						<td style="width:100px">01/01/1900 </td>
+						<td style="width:100px">14:00</td>
+						<td style="width:150px">Palestra</td>
 						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
 							  <span class="glyphicon glyphicon-eye-open"></span>
 							</button>
@@ -126,6 +119,12 @@
 							</button>
 							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
 							  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
+							  <span class="glyphicon glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
+							  <span class="glyphicon glyphicon-file"></span>
 							</button>
 						</td>
 					</tr>
