@@ -2,19 +2,30 @@
   <div class="panel panel-default">
 	<div class="panel-heading"><h4>Pesquisar</h4></div>
     <div class="panel-body">
-	<fieldset disabled>
-	<div class="form-group col-lg-12">
-    <div class="form-group col-lg-2">
-    	<label for="cnpjEmpresa">CNPJ</label>
-      <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11"/>
-    </div>
-    <div class="form-group col-lg-10">
-    	<label for="nomeEmpresa">Razão social</label>
-      <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO"/>
-    </div>
-	</div>
-	</fieldset>
-	<div class="form-group col-lg-12">
+				<div class="form-group col-lg-12">
+			<fieldset disabled>
+				<div class="form-group col-lg-2">
+					<label for="cnpjEmpresa">CNPJ</label>
+					<input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11"/>
+				</div>
+				<div class="form-group col-lg-10">
+					<label for="nomeEmpresa">Razão social</label>
+					<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO"/>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="telefoneEmpresa">Telefone</label>
+					<input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value="(11) 2222-3333"/>
+				</div>
+				<div class="form-group col-lg-3">
+					<label for="emailEmpresa">E-mail</label></br>
+					<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com"/>
+				</div>
+				<div class="form-group col-lg-3">
+					<label for="emailEmpresa">Serviço</label></br>
+					<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="Palestra"/>
+				</div>
+			</fieldset>
+	
 		<div class="form-group col-lg-3">
 			<label for="dtFim">Data início</label>
 			<div class='input-group date col-xs-9' id='dtInicio'>
@@ -35,7 +46,7 @@
 		</div>
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-default">Pesquisar</button>
-			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaIncluir.html')">Agendar</button>
+			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaEmpresaIncluir.html')">Agendar</button>
 		</div>
 	</div>
 		
