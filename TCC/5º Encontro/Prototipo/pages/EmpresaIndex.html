@@ -3,7 +3,7 @@
       <div class="panel-heading"><h4>Pesquisar</h4></div>
       <div class="panel-body">
       <div class="form-group col-lg-12">
-          <div class="form-group col-lg-2">
+          <div class="form-group col-lg-3">
             <b>CNPJ</b>
             <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" />
           </div>
@@ -41,13 +41,13 @@
                           <td style="width:150px">email@email.com </td>
                           <td style="width:150px">SIM</td>
                           <td style="width:200px">
-                            <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('PacienteConsultar.html')">
+                            <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('EmpresaConsultar.html')">
                               <span class="glyphicon glyphicon-eye-open"></span>
                             </button>
                             <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('EmpresaEditar.html')" >
                               <span class="glyphicon glyphicon-pencil"></span>
                             </button>
-                            <button type="button" class="btn btn-xs btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalConfirmaExclusao"  title="Excluir">
+                            <button type="button" class="btn btn-xs btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalExcluirEmpresa"  title="Excluir">
                               <span class="glyphicon glyphicon glyphicon-remove"></span>
                             </button>
                             <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaEmpresa.html')" >
@@ -56,40 +56,6 @@
                              
                           </td>
                       </tr>
-                      <!--<tr>
-                          <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-                          <td>22.222.222/0000-00</td>
-                          <td>Empresa AZX </td>
-                          <td>email@email.com </td>
-                          <td style="width:200px">
-							  <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaEmpresa.html')" >
-							   <span class="glyphicon glyphicon-calendar"></span>
-							  </button>
-                              <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar" onclick="carregarPagina('EmpresaEditar.html')">
-                                <span class="glyphicon glyphicon-edit"></span>
-                              </button>
-                              <button type="button" class="btn btn-xs btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalConfirmaImpressao"  title="Excluir">
-                                <span class="glyphicon glyphicon glyphicon-remove"></span>
-                              </button>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-                          <td>11.222.333/0000-22</td>
-                          <td>Empresa ABC </td>
-                          <td>email@email.com </td>
-                          <td style="width:200px">
-							  <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Agendamentos" onclick="carregarPagina('AgendaEmpresa.html')" >
-							   <span class="glyphicon glyphicon-calendar"></span>
-							  </button>
-                              <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Editar" onclick="carregarPagina('EmpresaEditar.html')">
-                                <span class="glyphicon glyphicon-edit"></span>
-                              </button>
-                              <button type="button" class="btn btn-xs btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalConfirmaImpressao"  title="Excluir">
-                                <span class="glyphicon glyphicon glyphicon-remove"></span>
-                              </button>
-                          </td>
-                      </tr>-->
                   </tbody>
                   
               </table>
@@ -104,43 +70,41 @@
       <span class="glyphicon glyphicon-chevron-left"></span>Voltar
   </button>	
 </div>
-
-<div class="modal fade" id="myModalSuccessSalvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="myModalExcluirEmpresa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
   
         <div class="panel-group ">
-          <div class="panel panel-default">
-          
-              <div class="panel-body text-left">
-                  <p class="alert alert-success"><strong> Aviso!</strong></p>
-                  <p>Empresa excluida com sucesso!</p>
-              </div>
-          </div>
+      <div class="panel panel-default ">
+        <div class="panel-body text-left ">
+          <p class="alert alert-warning"><strong> Aviso!</strong></p>
+          <p>Confirmar a exclusão da empresa?</p>
+        </div>
+      </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalEmpresaExcluido">Sim</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
         </div>
       </div>
     </div>
   </div>
   </div>
-  
   <!-- Modal -->
-  <div class="modal fade" id="myModalConfirmaExclusao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="myModalEmpresaExcluido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
   
         <div class="panel-group ">
-          <div class="panel panel-default ">
-              <div class="panel-body text-left ">
-                  <p class="alert alert-warning"><strong> Aviso!</strong></p>
-                  <p>Confirma exclusão</p>
-              </div>
-          </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessSalvar">Sim</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
+      <div class="panel panel-default ">
+        <div class="panel-body text-left ">
+          <p class="alert alert-success"><strong> Aviso!</strong></p>
+          <p>Empresa excluída com sucesso!</p>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
       </div>
     </div>
   </div>

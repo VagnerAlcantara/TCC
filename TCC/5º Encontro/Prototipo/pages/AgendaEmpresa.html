@@ -1,311 +1,299 @@
 <div class="panel-group">
-  <div class="panel panel-default">
-	<div class="panel-heading"><h4>Pesquisar</h4></div>
-    <div class="panel-body">
-				<div class="form-group col-lg-12">
-			<fieldset disabled>
-				<div class="form-group col-lg-2">
-					<label for="cnpjEmpresa">CNPJ</label>
-					<input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11"/>
-				</div>
-				<div class="form-group col-lg-10">
-					<label for="nomeEmpresa">Razão social</label>
-					<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO"/>
-				</div>
-				<div class="form-group col-lg-2">
-					<label for="telefoneEmpresa">Telefone</label>
-					<input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value="(11) 2222-3333"/>
-				</div>
-				<div class="form-group col-lg-3">
-					<label for="emailEmpresa">E-mail</label></br>
-					<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com"/>
-				</div>
-				<div class="form-group col-lg-3">
-					<label for="emailEmpresa">Serviço</label></br>
-					<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="Palestra"/>
-				</div>
-			</fieldset>
-	
-		<div class="form-group col-lg-3">
-			<label for="dtFim">Data início</label>
-			<div class='input-group date col-xs-9' id='dtInicio'>
-				<input type='date' class="form-control datepicker " value="01/01/1900"/>
-				<span class="input-group-addon">
-					<span class="glyphicon glyphicon-calendar"></span>
-				</span>
-			</div>
-		</div>
-		<div class="form-group col-lg-3">
-			<label for="dtFim">Data fim</label>
-			<div class='input-group date col-xs-9' id='dtFim'>
-				<input type='date' class="form-control datepicker" value="01/01/1900" />
-				<span class="input-group-addon">
-					<span class="glyphicon glyphicon-calendar"></span>
-				</span>
-			</div>
-		</div>
-		<div class="form-group col-lg-12 text-right">
-			<button type="submit" class="btn btn-default">Pesquisar</button>
-			<button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaEmpresaIncluir.html')">Agendar</button>
-		</div>
-	</div>
-		
-	</div>
-  </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Pesquisar</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-12">
+                <fieldset disabled>
+                    <div class="form-group col-md-3">
+                        <label for="cnpjEmpresa">CNPJ</label>
+                        <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11" disabled="disabled" />
+                    </div>
+                    <div class="form-group col-lg-9">
+                        <label for="nomeEmpresa">Razão social</label>
+                        <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO" />
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <label for="telefoneEmpresa">Telefone</label>
+                        <input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value="(11) 2222-4444" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="emailEmpresa">E-mail</label></br>
+                        <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com" />
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="emailEmpresa">Serviço</label></br>
+                        <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="Palestra" />
+                    </div>
+                </fieldset>
+
+                <div class="form-group col-lg-3">
+                    <label for="dtFim">Data início</label>
+                    <div class='input-group date col-xs-9' id='dtInicio'>
+                        <input type='date' class="form-control datepicker " value="01/01/1900" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="dtFim">Data fim</label>
+                    <div class='input-group date col-xs-9' id='dtFim'>
+                        <input type='date' class="form-control datepicker" value="01/01/1900" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-12 text-right">
+                    <button type="submit" class="btn btn-default">Pesquisar</button>
+                    <button type="submit" class="btn btn-default" onclick="carregarPagina('AgendaEmpresaIncluir.html')">Agendar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 <div class="panel-group">
-  <div class="panel panel-default">
-	<div class="panel-heading"><h4>Resultado</h4></div>
-    <div class="panel-body">
-	
-       		<div class="table-responsive">
-			<table class="table table-bordered table-hover table-striped">
-				<thead>
-					<tr class="active">
-						<th></th>
-						<th style="width:100px">Data</th>
-						<th style="width:100px">Horário</th>
-						<th style="width:150px">Serviço</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">08:00</td>
-						<td style="width:150px">Palestra </td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">11:00</td>
-						<td style="width:150px">Palestra</td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
-						<td style="width:100px">01/01/1900 </td>
-						<td style="width:100px">14:00</td>
-						<td style="width:150px">Palestra</td>
-						<td style="width:170px"> 
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Visualizar agendamento">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar agendamento" onclick="carregarPagina('AgendaAlterar.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar agendamento">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar agendamento">
-							  <span class="glyphicon glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('AgendaAlterar.html')" title="Atender">
-							  <span class="glyphicon glyphicon-file"></span>
-							</button>
-						</td>
-					</tr>
-				</tbody>
-				
-			</table>
-		</div>
-				
-		</div>
-	</div>
-  </div>
-</div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Resultado</h4></div>
+        <div class="panel-body">
 
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr class="active">
+                            <th></th>
+                            <th style="width:100px">Data</th>
+                            <th style="width:100px">Horário</th>
+                            <th style="width:150px">Serviço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+                            <td style="width:100px">01/01/1900 </td>
+                            <td style="width:100px">08:00</td>
+                            <td style="width:150px">Palestra </td>
+                            <td style="width:170px">
+                                <!--<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Consultar" onclick="carregarPagina('AgendaEmpresaConsultar.html')" >-->
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Consultar">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('AgendaEmpresaEditar.html')">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento" title="Cancelar">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar">
+                                    <span class="glyphicon glyphicon glyphicon-ok"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+                            <td style="width:100px">01/01/1900 </td>
+                            <td style="width:100px">11:00</td>
+                            <td style="width:150px">Palestra</td>
+                            <td style="width:170px">
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Consultar">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('AgendaEmpresaEditar.html')">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento"  title="Cancelar">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar">
+                                    <span class="glyphicon glyphicon glyphicon-ok"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:25px"><i class="glyphicon glyphicon-map-marker"></i></td>
+                            <td style="width:100px">01/01/1900 </td>
+                            <td style="width:100px">14:00</td>
+                            <td style="width:150px">Palestra</td>
+                            <td style="width:170px">
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal" title="Consultar">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('AgendaEmpresaEditar.html')">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalCancelarAgendamento" title="Cancelar">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalConfirmarAgendamento" title="Confirmar">
+                                    <span class="glyphicon glyphicon glyphicon-ok"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
-      </div>
-      <div class="modal-body">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Dados do Agendamento</h4>
+            </div>
+            <div class="modal-body">
                 <div class="panel-group">
-				  <div class="panel panel-default">
-						<div class="panel-body">
-						<fieldset disabled>
-							<div class="page-header">
-								<h4>Dados pessoais</h4>
-							</div>
-							<div class="form-group col-lg-12">
-								<label for="nomePaciente">Nome</label>
-								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Maria dos Santos"/>
-							</div>
-							<div class="form-group col-lg-6">
-								<label for="dataNascimento">Data Nascimento</label>
-								<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="15/03/1978"/>
-							</div>
-							<div class="form-group col-lg-6">
-								<label for="nomePaciente">Sexo</label>
-								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Feminino"/>
-							</div>
-							
-							<div class="form-group col-lg-4">
-								<label for="rgPaciente">RG</label>
-								<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="40.444.555-8"/>
-							</div>
-							<div class="form-group col-lg-4">
-								<label for="cpfPaciente">CPF</label>
-								<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="999.666.555-88"/>
-							</div>
-							<div class="form-group col-lg-4">
-								<label for="telefonePaciente">Telefone</label>
-								<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 9999-5555"/>
-							</div>
-							
-							<div class="page-header">
-								<h4>Agedamento</h4>
-							</div>
-							<div class="form-group col-lg-4">
-								<label for="nomePaciente">Serviço</label>
-								<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Consulta"/>
-							</div>
-							
-							<div class="form-group col-lg-8">
-								<label for="dtFim">Data/ hora</label>
-								<div class='input-group date col-xs-8' id='dtFim'>
-									<input type='date' class="form-control datepicker" value="01/01/1900 08:00" />
-									<span class="input-group-addon">
-										<span class="glyphicon glyphicon-calendar"></span>
-									</span>
-								</div>
-							</div>
-							
-						</fieldset>
-						</div>
-					</div>
-				</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <fieldset disabled>
+                                <div class="form-group col-sm-5">
+                                    <label for="cnpjEmpresa">CNPJ</label>
+                                    <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="11.222.333/0000-11" disabled="disabled" />
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="nomeEmpresa">Razão social</label>
+                                    <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa XPTO" />
+                                </div>
+                                <div class="form-group col-lg-5">
+                                    <label for="telefoneEmpresa">Telefone</label>
+                                    <input type="text" class="form-control input-small" id="telefoneEmpresa" aria-describedby="telefoneEmpresaHelp" value="(11) 2222-4444" />
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="emailEmpresa">E-mail</label></br>
+                                    <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com" />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="dtFim">Data</label>
+                                    <div class='input-group date col-sm-8' id='dtInicio'>
+                                        <input type='date' class="form-control datepicker " value="01/01/1900" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-5">
+                                    <label for="dtFim">Horário</label>
+                                    <div class='input-group date col-sm-8' id='dtInicio'>
+                                        <input type='date' class="form-control datepicker " value="09:00" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="cnpjEmpresa">Serviço</label>
+                                    <input type="text" class="form-control input-small" id="cnpjEmpresa" aria-describedby="cnpjEmpresaHelp" value="Palestra" />
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label>Observações</label>
+                                    <textarea class="form-control" rows="3">Palestra será realizada na sala 1.</textarea>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="form-group col-lg-15 text-right">
+        <button type="button" class="btn btn-default " onclick="window.history.back();">
+            <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+        </button>
+
+    </div>
 </div>
-<div class="form-group col-lg-15 text-right">
-<button type="button" class="btn btn-default " onclick="window.history.back();">
-	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
-</button>	
-<div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModalCancelarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Confirma o cancelamento do agendamento?</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
-		<button type="button" class="btn btn-default" data-dismiss="modal" onclick="carregarPagina('Agenda.html')">Não</button>
-      </div>
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Confirma o cancelamento do agendamento?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="carregarPagina('Agenda.html')">Não</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default">
-		
-			<div class="panel-body text-left">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>O agendamento foi cancelado com sucesso!</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>
+            <div class="panel-group ">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>O agendamento foi cancelado com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModalConfirmarAgendamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Deseja confirmar o agendamento?</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessConfirmacao">Sim</button>
-		<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-      </div>
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Deseja confirmar o agendamento?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessConfirmacao">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 <div class="modal fade" id="myModalSuccessConfirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default">
-		
-			<div class="panel-body text-left">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>O agendamento foi confirmado com sucesso!</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>
+            <div class="panel-group ">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>O agendamento foi confirmado com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
