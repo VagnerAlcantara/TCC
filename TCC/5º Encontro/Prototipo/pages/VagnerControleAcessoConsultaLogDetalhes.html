@@ -1,0 +1,77 @@
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Log</h4></div>
+        <div class="panel-body">
+            <fieldset disabled>
+                <div class="form-group col-lg-12">
+                    <div class="form-group col-lg-10">
+                        <label for="nomePaciente">Usuário responsável pela alteração</label>
+                        <input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="Natalia Rosetto" />
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="dtFim">Data</label>
+                        <div class='input-group date col-sm-8' id='dtInicio'>
+                            <input type='date' class="form-control datepicker " value="01/01/1900" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <label for="dtFim">Horário</label>
+                        <div class='input-group date col-sm-8' id='dtInicio'>
+                            <input type='date' class="form-control datepicker " value="09:00" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Resultado</h4></div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr class="active">
+                            <th style="width:100px">Entidade</th>
+                            <th style="width:100px">Campo</th>
+                            <th style="width:150px">De</th>
+                            <th style="width:150px">Para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:100px">Usuário</td>
+                            <td style="width:100px">Nome</td>
+                            <td style="width:150px">Natália R</td>
+                            <td style="width:150px">Natália Rosseto</td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px">Usuário</td>
+                            <td style="width:100px">E-mail</td>
+                            <td style="width:150px">email@email.com</td>
+                            <td style="width:150px">email@email.com.br</td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px">Usuário</td>
+                            <td style="width:100px">Endereço</td>
+                            <td style="width:150px">Rua A</td>
+                            <td style="width:150px">Rua B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-group col-lg-15 text-right">
+    <button type="button" class="btn btn-default " onclick="carregarPagina('Agenda.html')">
+        <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+    </button>
+</div>
