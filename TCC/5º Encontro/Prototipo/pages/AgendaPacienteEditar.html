@@ -1,7 +1,8 @@
 <div class="panel-group">
-        <div class="panel panel-default">
-            <div class="panel-heading"><h4>Dados Pessoais</h4></div>
-            <div class="panel-body">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Dados Pessoais</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-12">
                 <fieldset disabled>
                     <div class="form-group col-lg-2">
                         <label for="cpfPaciente">CPF</label>
@@ -23,7 +24,7 @@
                         <label for="telefonePaciente">Telefone</label>
                         <input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 2222-3233" />
                     </div>
-                    <div class="form-group col-lg-6">
+                    <div class="form-group col-lg-4">
                         <label for="emailEmpresa">E-mail</label></br>
                         <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com.br" />
                     </div>
@@ -35,219 +36,228 @@
                         <label for="nomeEmpresa">Convênio</label>
                         <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Notre Dame Intermédica" />
                     </div>
+                    <div class="form-group col-lg-4">
+                        <label for="nomeEmpresa">Empresa</label>
+                        <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Empresa A" />
+                    </div>
                 </fieldset>
-    
-            </div>
-        </div>
-    
-        <div class="panel panel-default">
-            <div class="panel-heading"><h4>Dados do Agendamento</h4></div>
-            <div class="panel-body">
-                <div class="form-group col-lg-12">
-                    <div class="form-group col-lg-4">
-                        <label for="servico">Serviço</label>
-                        <select class="form-control input-small" id="servico" aria-describedby="servicoHelp">
-                            <option  value="Sel">Selecione</option>
-                            <option value="fem">Análise Clínica</option>
-                            <option selected value="masc">Avaliação Psicológica </option>
-                        </select>
-                    </div>
-                    <div class="row"></div>
-                    <div class="form-group col-lg-4">
-                        <table class="table-condensed table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th class="text-center" colspan="12">
-                                        <span class="btn-group"></span><span class="glyphicon glyphicon-chevron-left"></span> Setembro 2017 <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>Dom</th>
-                                    <th>Seg</th>
-                                    <th>Ter</th>
-                                    <th>Qua</th>
-                                    <th>Qui</th>
-                                    <th>Sex</th>
-                                    <th>Sab</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="muted">29</td>
-                                    <td class="muted">30</td>
-                                    <td class="muted">31</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
-                                    <td>17</td>
-                                    <td>18</td>
-                                </tr>
-                                <tr>
-                                    <td>19</td>
-                                    <td class="btn-primary"><strong>20</strong></td>
-                                    <td>21</td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                    <td>24</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <td>26</td>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td class="muted">1</td>
-                                    <td class="muted">2</td>
-                                    <td class="muted">3</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4>Horários disponíveis para o dia 20 de Setembro de 2017</h4></div>
-                            <div class="panel-body">
-                                <div class="col-lg-4">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">09:00
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">09:30
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">11:30
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" checked value="">14:00
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">15:30
-                                        </label>
-                                    </div>
-    
-    
-                                </div>
-    
-    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <label for="emailEmpresa">Observações</label></br>
-                        <textarea class="form-control" rows="3">Paciente chegará atrasado.</textarea>
-                    </div>
-                </div>
-    
-                <div class="form-group col-lg-12 text-right">
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" title="Salvar">Salvar</button>
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalCancelar" title="Cancelar">Cancelar</button>
-                    
-                </div>
-            </div>
-    
-    
-        </div><!-- end wrapper -->
-    
-    
-    </div>
-    
-    
-    
-    <div class="form-group col-lg-15 text-right">
-        <button type="button" class="btn btn-default " onclick="carregarPagina('Agenda.html')">
-            <span class="glyphicon glyphicon-chevron-left"></span>Voltar
-        </button>
-    </div>
-    
-    
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-    
-                <div class="panel-group ">
-                    <div class="panel panel-default ">
-                        <div class="panel-body text-left ">
-                            <p class="alert alert-warning"><strong> Aviso!</strong></p>
-                            <p>Confirma a inclusão do agendamento?</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-    
-                <div class="panel-group ">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Dados do Agendamento</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-12">
+                <div class="form-group col-lg-6">
+                    <label for="servico">Serviço</label>
+                    <select class="form-control input-small" id="servico" aria-describedby="servicoHelp">
+                        <option value="Sel">Selecione</option>
+                        <option value="fem">Análise Clínica</option>
+                        <option selected value="masc">Avaliação Psicológica </option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-6 text-right">
+                    <label for="servico"></label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Atendimento particular
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-lg-12">
+
+                <div class="row"></div>
+                <div class="form-group col-lg-4">
+                    <table class="table-condensed table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center" colspan="12">
+                                    <span class="btn-group"></span><span class="glyphicon glyphicon-chevron-left"></span> Setembro 2017 <span class="glyphicon glyphicon-chevron-right"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Dom</th>
+                                <th>Seg</th>
+                                <th>Ter</th>
+                                <th>Qua</th>
+                                <th>Qui</th>
+                                <th>Sex</th>
+                                <th>Sab</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="muted">29</td>
+                                <td class="muted">30</td>
+                                <td class="muted">31</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td class="btn-primary"><strong>20</strong></td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td class="muted">1</td>
+                                <td class="muted">2</td>
+                                <td class="muted">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-8">
                     <div class="panel panel-default">
-    
-                        <div class="panel-body text-left">
-                            <p class="alert alert-success"><strong> Aviso!</strong></p>
-                            <p>O agendamento foi realizado com sucesso!</p>
+                        <div class="panel-heading"><h4>Horários disponíveis para o dia 20 de Setembro de 2017</h4></div>
+                        <div class="panel-body">
+                            <div class="col-lg-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">09:00
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">09:30
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">11:30
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked value="">14:00
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">15:30
+                                    </label>
+                                </div>
+
+
+                            </div>
+
+
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+                <div class="form-group col-lg-12">
+                    <label for="emailEmpresa">Observações</label></br>
+                    <textarea class="form-control" rows="3">Paciente chegará atrasado.</textarea>
+                </div>
+            </div>
+
+            <div class="form-group col-lg-12 text-right">
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" title="Salvar">Salvar</button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalCancelar" title="Cancelar">Cancelar</button>
+
+            </div>
+        </div>
+    </div><!-- end wrapper -->
+</div>
+
+
+
+<div class="form-group col-lg-15 text-right">
+    <button type="button" class="btn btn-default " onclick="carregarPagina('Agenda.html')">
+        <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+    </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Confirma a inclusão do agendamento?</p>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccess">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="panel-group ">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>O agendamento foi realizado com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
 <div class="modal fade" id="myModalCancelar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="panel-group ">
-          <div class="panel panel-default ">
-              <div class="panel-body text-left ">
-                  <p class="alert alert-danger"><strong> Aviso!</strong></p>
-                  <p>Ao completar essa ação os dados não salvos serão perdidos, deseja continuar? </p>
-              </div>
-          </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Sim</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+        <div class="modal-content">
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-danger"><strong> Aviso!</strong></p>
+                        <p>Ao completar essa ação os dados não salvos serão perdidos, deseja continuar? </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  </div>
-  
+</div>
 
-    
-    
+
+
