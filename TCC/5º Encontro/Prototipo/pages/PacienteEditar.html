@@ -22,7 +22,7 @@
 				<label for="telefonePaciente">Telefone</label>
 				<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="(11) 2222-3233"/>
 			</div>
-			<div class="form-group col-lg-6">
+			<div class="form-group col-lg-4">
 				<label for="emailEmpresa">E-mail</label></br>
 				<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="email@email.com.br"/>
 			</div>
@@ -49,7 +49,7 @@
 				<label for="nomeEmpresa">CEP</label>
 				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="00000-000"/>
 			</div>
-			<div class="form-group col-lg-6">
+			<div class="form-group col-lg-4">
 				<label for="nomeEmpresa">Bairro</label>
 				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="Centro"/>
 			</div>
@@ -61,23 +61,45 @@
 				<label for="nomeEmpresa">Estado</label>
 				<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="SP"/>
 			</div>
-			<div class="form-group col-lg-12">
+			<div class="col-lg-6">
 				<label for="nomeEmpresa">Convênio</label></br>
 				<label class="radio-inline">
-				<input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="" type="radio">Sim
+						<input name="optConvenio" id="optionsRadiosInline1" value="option1" type="radio" checked onchange="mostraConvenio()">Sim
 				</label>
 				<label class="radio-inline">
-				<input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" >Não
+						<input name="optConvenio" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeConvenio()">Não
 				</label>
-			</div>
-			<div class="form-group col-lg-4" id="idConvenios" >
-				<label for="sexoPaciente">Selecione um convênio</label></br>
-				<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-				  <option value="Ami">Amil Saúde</option>
-				  <option value="Uni">Central Nacional Unimed</option>
-				  <option value="Int">Notre Dame Intermédica</option>
-				</select>
-			</div>
+				<div class="form-group row"></div>
+				<div id="idConvenios">
+						<label for="sexoPaciente">Selecione um convênio</label></br>
+						<select class="form-control input-small" style="width:70%" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
+								<option value="Sel">Selecione</option>
+								<option value="Ami" selected>Amil Saúde</option>
+								<option value="Uni">Central Nacional Unimed</option>
+								<option value="Int">Notre Dame Intermédica</option>
+						</select>
+				</div>
+		</div>
+		<div class="col-lg-6">
+				<label for="nomeEmpresa">Empresa</label></br>
+				<label class="radio-inline">
+						<input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" type="radio" checked onchange="mostraEmpresa()">Sim
+				</label>
+				<label class="radio-inline">
+						<input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeEmpresa()">Não
+				</label>
+				<div class="form-group row"></div>
+				<div id="idEmpresas">
+						<label for="sexoPaciente">Selecione uma empresa</label></br>
+						<select class="form-control input-small" id="sexoPaciente" style="width:70%" aria-describedby="sexoPacienteHelp">
+								<option value="Sel">Selecione</option>
+								<option value="Ami" selected>Empresa A</option>
+								<option value="Uni">Empresa B</option>
+						</select>
+				</div>
+		</div>
+		<div class="row"></div>
+		<br>
 			
 		<div class="form-group col-lg-12 text-right">
 			<button type="submit" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessPaciente">Salvar</button>
@@ -122,14 +144,22 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript">
-	
+
     function escondeConvenio() {
-	
-		$('#idConvenios').hide();
-	}
 
-	function mostraConvenio() {
-		$('#idConvenios').show();
-	}
+        $('#idConvenios').hide();
+    }
 
-    </script>
+    function mostraConvenio() {
+        $('#idConvenios').show();
+    }
+
+    function escondeEmpresa() {
+
+        $('#idEmpresas').hide();
+    }
+
+    function mostraEmpresa() {
+        $('#idEmpresas').show();
+    }
+</script>
