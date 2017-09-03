@@ -1,75 +1,85 @@
 <div class="panel-group">
-	<div class="panel panel-default">
-			<div class="panel-heading"><h4>Pesquisar</h4></div>
-			<div class="panel-body">
-					<div class="form-group col-lg-12">
-							<div class="form-group col-lg-3">
-									<label for="dtFim">Data início</label>
-									<div class='input-group date col-xs-9' id='dtInicio'>
-											<input type='date' class="form-control datepicker " value="01/01/1900" />
-											<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
-											</span>
-									</div>
-							</div>
-
-							<div class="form-group col-lg-3">
-									<label for="dtFim">Data fim</label>
-									<div class='input-group date col-xs-9' id='dtInicio'>
-											<input type='date' class="form-control datepicker " value="02/01/1900" />
-											<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
-											</span>
-									</div>
-							</div>
-							<div class="form-group col-lg-6 ">
-									<button type="submit" class="btn btn-default">Filtrar</button>
-							</div>
-					</div>
-			</div>
-	</div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Pesquisar</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-12">
+                <div class="form-group col-lg-3">
+                    <label for="tipoPagamento">Ação</label></br>
+                    <select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
+                        <option value="pago">Selecione</option>
+                        <option value="pago">Alteração</option>
+                        <option value="pago">Confirmação</option>
+                        <option value="pago">Exclusão</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="dtFim">Data in&iacute;cio</label>
+                    <div class='input-group date col-xs-9' id='dtInicio'>
+                        <input type='date' class="form-control datepicker " value="01/01/1900" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-3">
+                    <label for="dtFim">Data in&iacute;cio</label>
+                    <div class='input-group date col-xs-9' id='dtInicio'>
+                        <input type='date' class="form-control datepicker " value="01/01/1900" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-12">
+                    <div class="form-group col-lg-12 text-right">
+                        <button type="submit" class="btn btn-default">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="panel-group">
-	<div class="panel panel-default">
-			<div class="panel-heading"><h4>Resultado</h4></div>
-			<div class="panel-body">
-					<div class="table-responsive">
-							<table class="table table-bordered table-hover table-striped">
-									<thead>
-											<tr class="active">
-													<th>Usuário responsável pela alteração</th>
-													<th>Data/hora</th>
-													<th>Ação</th>
-													<th></th>
-											</tr>
-									</thead>
-									<tbody>
-											<tr>
-													<td style="width:100px">msilva</td>
-													<td style="width:150px">20/08/2017 10:01:23</td>
-													<td style="width:150px">Inclusão</td>
-													<td style="width:100px"></td>
-											</tr>
-											<tr>
-													<td style="width:100px">msilva</td>
-													<td style="width:150px">20/08/2017 10:01:23</td>
-													<td style="width:150px">Alterar</td>
-													<td style="width:100px">
-															<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('VagnerControleAcessoConsultaLogDetalhes.html')" title="Atender">
-																	<span class="glyphicon glyphicon-eye-open"></span>
-															</button>
-													</td>
-											</tr>
-									</tbody>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Resultado</h4></div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr class="active">
+                            <th title="Usuário responsável pela alteração">Usuário</th>
+                            <th>Data/hora</th>
+                            <th>Ação</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:80px">msilva</td>
+                            <td style="width:100px">20/08/2017 10:01:23</td>
+                            <td style="width:100px">Inclusão</td>
+                            <td style="width:10px"></td>
+                        </tr>
+                        <tr>
+                            <td style="width:80px">msilva</td>
+                            <td style="width:100px">20/08/2017 10:01:23</td>
+                            <td style="width:100px">Alterar</td>
+                            <td style="width:10px">
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" onclick="carregarPagina('VagnerControleAcessoConsultaLogDetalhes.html')" title="Atender">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
 
-							</table>
-					</div>
+                </table>
+            </div>
 
-			</div>
-	</div>
+        </div>
+    </div>
 </div>
 <div class="form-group col-lg-15 text-right">
-	<button type="button" class="btn btn-default " onclick="window.history.back();">
-			<span class="glyphicon glyphicon-chevron-left"></span>Voltar
-	</button>
+    <button type="button" class="btn btn-default " onclick="window.history.back();">
+        <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+    </button>
 </div>
