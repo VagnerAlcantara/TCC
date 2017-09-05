@@ -13,7 +13,7 @@ END
 CREATE TABLE [Empresa].[Contato](
 	[Id] [int] identity NOT NULL PRIMARY KEY,
 	[Cnpj] [int] NOT NULL FOREIGN KEY REFERENCES Empresa.Empresa(Cnpj),
-	[IdTelefone] [int] NOT NULL FOREIGN KEY REFERENCES Empresa.Telefone(Id),
-	[IdEmail] [int] NOT NULL FOREIGN KEY REFERENCES Empresa.Email(Id),
-	[IdContatoTipo] [int] NOT NULL FOREIGN KEY REFERENCES Empresa.ContatoTipo(Id),
+	[Email] [varchar](100) NULL,
+	[IdTelefone] [int] NOT NULL FOREIGN KEY REFERENCES Empresa.Telefone(Id)
+
  )

@@ -13,4 +13,6 @@ CREATE TABLE [Empresa].[Empresa](
 	[Cnpj] [int] NOT NULL PRIMARY KEY,
 	[RazaoSocial] [varchar](200) NOT NULL,
 	[NomeFantasia] [varchar](200) NULL,
+	[Parceira] bit NOT NULL,
+	[Convenio] bit NOT NULL
 )
