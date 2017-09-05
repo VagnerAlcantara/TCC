@@ -1,126 +1,126 @@
 
 <div class="panel-group">
-  <div class="panel panel-default">
-	<div class="panel-heading"><h4>Funcionário - Pesquisar</h4></div>
-    <div class="panel-body">
-	<div class="form-group col-lg-12">
-		<div class="form-group col-lg-2">
-			<b>Nome ou Matrícula</b>
-			<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
-		</div>
-		<div class="form-group col-lg-6 ">
-			</br>
-			<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalPacienteNaoEncontrado">Pesquisar</button>
-			<button type="submit" class="btn btn-default" onclick="carregarPagina('ControleAcessoFuncionarioIncluir.html')">Novo Funcionário</button>
-		</div>
-	</div>
-	</div>
-  </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Funcionário - Pesquisar</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-12">
+                <div class="form-group col-lg-6">
+                    <b>Nome ou Matrícula</b>
+                    <input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" />
+                </div>
+                <div class="form-group col-lg-4 ">
+                    </br>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalFuncionarioNaoEncontrado">Pesquisar</button>
+                    <button type="submit" class="btn btn-default" onclick="carregarPagina('ControleAcessoFuncionarioIncluir.html')">Novo Funcionário</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="panel-group">
-  <div class="panel panel-default">
-	<div class="panel-heading"><h4>Resultado</h4></div>
-    <div class="panel-body">
-    <div class="table-responsive">
-			<table class="table table-bordered table-hover table-striped">
-				<thead>
-					<tr class="active">
-						<th></th>
-						<th>Matrícula</th>
-						<th>Nome do Funcionário</th>
-						<th>Função</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
-						<td style="width:100px">002</td>
-						<td style="width:150px">Maria S. Silva </td>
-						<td style="width:150px">Secretária Pl </td>
-						<td style="width:200px">
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Detalhar" onclick="carregarPagina('ControleAcessoFuncionarioDetalhar.html')">
-							  <span class="glyphicon glyphicon-eye-open"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('ControleAcessoFuncionarioEditar.html')" >
-							  <span class="glyphicon glyphicon-pencil"></span>
-							</button>
-							<button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalExcluirPaciente"  title="Excluir">
-							  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-							
-						</td>
-					</tr>
-				</tbody>
-				
-			</table>
-		</div>
-				
-		</div>
-	</div>
-  </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Resultado</h4></div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr class="active">
+                            <th></th>
+                            <th>Matrícula</th>
+                            <th>Nome do Funcionário</th>
+                            <th>Função</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
+                            <td style="width:100px">002</td>
+                            <td style="width:150px">Maria S. Silva </td>
+                            <td style="width:150px">Secretária Pl </td>
+                            <td style="width:200px">
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Detalhar" onclick="carregarPagina('ControleAcessoFuncionarioDetalhar.html')">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" title="Editar" onclick="carregarPagina('ControleAcessoFuncionarioEditar.html')">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                                <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModalExcluirFuncionario" title="Excluir">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
 </div>
 <div class="form-group col-lg-15 text-right">
-<button type="button" class="btn btn-default " onclick="window.history.back();">
-	<span class="glyphicon glyphicon-chevron-left"></span>Voltar
-</button>	
-<div>
-<!-- Modal -->
-<div class="modal fade" id="myModalPacienteNaoEncontrado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Paciente não cadastrado, selecione "Sim" para cadastrar.</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal" onclick="novoPaciente()" >Sim</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-      </div>
-    </div>
-  </div>
-</div>
+    <button type="button" class="btn btn-default " onclick="window.history.back();">
+        <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+    </button>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="myModalExcluirPaciente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+<div class="modal fade" id="myModalFuncionarioNaoEncontrado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-warning"><strong> Aviso!</strong></p>
-				<p>Confirma a exclusão do funcionário?</p>
-			</div>
-		</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalPacienteExcluido">Sim</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal" >Não</button>
-      </div>
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Funcionário não cadastrado, selecione "Sim" para cadastrar.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="novoFuncionario()">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="myModalPacienteExcluido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+<div class="modal fade" id="myModalExcluirFuncionario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-      <div class="panel-group ">
-		<div class="panel panel-default ">
-			<div class="panel-body text-left ">
-				<p class="alert alert-success"><strong> Aviso!</strong></p>
-				<p>Funcionário excluído com sucesso!</p>
-			</div>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-		</div>
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Confirma a exclusão do funcionário?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalFuncionarioExcluido">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModalFuncionarioExcluido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>Funcionário excluído com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
