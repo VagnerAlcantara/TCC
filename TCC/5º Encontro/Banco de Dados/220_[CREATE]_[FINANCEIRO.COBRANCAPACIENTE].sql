@@ -11,7 +11,7 @@ END
 
 CREATE TABLE [Financeiro].[CobrancaPaciente](
 	[Id] [int] NOT NULL PRIMARY KEY,
-	[IdAgenda] [int] NOT NULL FOREIGN KEY REFERENCES Pessoa.Agenda(Id),
+	[IdAgenda] [int] NOT NULL FOREIGN KEY REFERENCES Paciente.Agenda(Id),
 	[Data] [date] NOT NULL,
 	[Valor] [decimal](18,4) NULL,
 	[Pago] bit NOT NULL,
