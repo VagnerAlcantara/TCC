@@ -55,3 +55,12 @@ go
 
 CREATE SCHEMA [Financeiro]
 GO
+
+IF EXISTS (SELECT  schema_name FROM    information_schema.schemata WHERE   schema_name = 'Funcionario' ) 
+BEGIN
+	DROP SCHEMA [Funcionario]
+END
+go
+
+CREATE SCHEMA [Funcionario]
+GO
