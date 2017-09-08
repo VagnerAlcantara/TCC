@@ -1,221 +1,222 @@
 <div class="panel-group">
-	<div class="panel panel-default">
-			<div class="panel-heading"><h4>Dados Pessoais</h4></div>
-			<div class="panel-body">
-					<div class="form-group col-lg-2">
-							<label for="cpfPaciente">CPF</label>
-							<input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="" />
-					</div>
-					<div class="form-group col-lg-10">
-							<label for="nomePaciente">Nome</label>
-							<input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="dataNascimento">Data Nascimento</label>
-							<input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="rgPaciente">RG</label>
-							<input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="telefonePaciente">Telefone</label>
-							<input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="" />
-					</div>
-					<div class="form-group col-lg-4">
-							<label for="emailEmpresa">E-mail</label></br>
-							<input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="sexoPaciente">Sexo</label></br>
-							<select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-									<option value="Sel">Selecione</option>
-									<option value="fem">Feminino</option>
-									<option value="masc">Masculino</option>
-							</select>
-					</div>
-					<div class="form-group col-lg-8">
-							<label for="nomeEmpresa">Endereço</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-1">
-							<label for="nomeEmpresa">Número</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-1">
-							<label for="nomeEmpresa">Comp.</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="nomeEmpresa">CEP</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-4">
-							<label for="nomeEmpresa">Bairro</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-4">
-							<label for="nomeEmpresa">Cidade</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="form-group col-lg-2">
-							<label for="nomeEmpresa">Estado</label>
-							<input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
-					</div>
-					<div class="col-lg-6">
-							<label for="nomeEmpresa">Convênio</label></br>
-							<label class="radio-inline">
-									<input name="optConvenio" id="optionsRadiosInline1" value="option1" type="radio" onchange="mostraConvenio()">Sim
-							</label>
-							<label class="radio-inline">
-									<input name="optConvenio" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeConvenio()">Não
-							</label>
-							<div class="form-group row"></div>
-							<div  id="idConvenios">
-									<label for="sexoPaciente">Selecione um convênio</label></br>
-									<select class="form-control input-small" style="width:70%" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-											<option value="Sel">Selecione</option>
-											<option value="Ami">Amil Saúde</option>
-											<option value="Uni">Central Nacional Unimed</option>
-											<option value="Int">Notre Dame Intermédica</option>
-									</select>
-							</div>
-					</div>
-					<div class="col-lg-6">
-							<label for="nomeEmpresa">Empresa</label></br>
-							<label class="radio-inline">
-									<input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" type="radio" onchange="mostraEmpresa()">Sim
-							</label>
-							<label class="radio-inline">
-									<input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeEmpresa()">Não
-							</label>
-							<div class="form-group row"></div>
-							<div id="idEmpresas">
-									<label for="sexoPaciente">Selecione uma empresa</label></br>
-									<select class="form-control input-small" id="sexoPaciente"  style="width:70%"aria-describedby="sexoPacienteHelp">
-											<option value="Sel">Selecione</option>
-											<option value="Ami">Empresa A</option>
-											<option value="Uni">Empresa B</option>
-									</select>
-							</div>
-					</div>
-					<div class="row"></div>
-					<br>
-					<div class="form-group col-lg-12 text-right">
-							<button type="submit" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessPaciente">Salvar</button>
-					</div>
-			</div>
-	</div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Dados Pessoais</h4></div>
+        <div class="panel-body">
+            <div class="form-group col-lg-2">
+                <label for="cpfPaciente">CPF</label>
+                <input type="text" class="form-control input-small" id="cpfPaciente" aria-describedby="cpfPacienteHelp" value="" />
+            </div>
+            <div class="form-group col-lg-10">
+                <label for="nomePaciente">Nome</label>
+                <input type="text" class="form-control input-small" id="nomePaciente" aria-describedby="nomePacienteHelp" value="" />
+            </div>
+            <div class="form-group col-lg-2">
+                <label for="dataNascimento">Data Nascimento</label>
+                <input type="text" class="form-control input-small" id="dataNascimento" aria-describedby="dataNascimentoHelp" value="" />
+            </div>
+            <div class="form-group col-lg-2">
+                <label for="rgPaciente">RG</label>
+                <input type="text" class="form-control input-small" id="rgPaciente" aria-describedby="rgPacienteHelp" value="" />
+            </div>
+            <div class="form-group col-lg-2">
+                <label for="telefonePaciente">Telefone</label>
+                <input type="text" class="form-control input-small" id="telefonePaciente" aria-describedby="telefonePacienteHelp" value="" />
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="emailEmpresa">E-mail</label></br>
+                <input type="text" class="form-control input-small" id="emailEmpresa" aria-describedby="emailEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-2">
+                <label for="sexoPaciente">Sexo</label></br>
+                <select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
+                    <option value="Sel">Selecione</option>
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
+                </select>
+            </div>
+            <div class="row"></div>
+            <div class="form-group col-lg-2">
+                <label for="nomeEmpresaCEP">CEP</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-8">
+                <label for="nomeEmpresaEndereco">Endereço</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-1">
+                <label for="nomeEmpresaNimero">Número</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-1">
+                <label for="nomeEmpresaComp">Comp.</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-6">
+                <label for="nomeEmpresaBairro">Bairro</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-3">
+                <label for="nomeEmpresaCidade">Cidade</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="form-group col-lg-3">
+                <label for="nomeEmpresaEstado">Estado</label>
+                <input type="text" class="form-control input-small" id="nomeEmpresa" aria-describedby="nomeEmpresaHelp" value="" />
+            </div>
+            <div class="col-lg-6">
+                <label for="nomeEmpresa">Convênio</label></br>
+                <label class="radio-inline">
+                    <input name="optConvenio" id="optionsRadiosInline1" value="option1" type="radio" onchange="mostraConvenio()">Sim
+                </label>
+                <label class="radio-inline">
+                    <input name="optConvenio" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeConvenio()">Não
+                </label>
+                <div class="form-group row"></div>
+                <div id="idConvenios">
+                    <label for="sexoPaciente">Selecione um convênio</label></br>
+                    <select class="form-control input-small" style="width:70%" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
+                        <option value="Sel">Selecione</option>
+                        <option value="Ami">Amil Saúde</option>
+                        <option value="Uni">Central Nacional Unimed</option>
+                        <option value="Int">Notre Dame Intermédica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <label for="nomeEmpresa">Empresa</label></br>
+                <label class="radio-inline">
+                    <input name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" type="radio" onchange="mostraEmpresa()">Sim
+                </label>
+                <label class="radio-inline">
+                    <input name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" type="radio" onchange="escondeEmpresa()">Não
+                </label>
+                <div class="form-group row"></div>
+                <div id="idEmpresas">
+                    <label for="sexoPaciente">Selecione uma empresa</label></br>
+                    <select class="form-control input-small" id="sexoPaciente" style="width:70%" aria-describedby="sexoPacienteHelp">
+                        <option value="Sel">Selecione</option>
+                        <option value="Ami">Empresa A</option>
+                        <option value="Uni">Empresa B</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row"></div>
+            <br>
+            <div class="form-group col-lg-12 text-right">
+                <button type="submit" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessPaciente">Salvar</button>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="form-group col-lg-15 text-right">
-	<button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
-			<span class="glyphicon glyphicon-chevron-left"></span>Voltar
-	</button>
+    <button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
+        <span class="glyphicon glyphicon-chevron-left"></span>Voltar
+    </button>
 </div>
 
 
 
 <div class="modal fade" id="myModalSuccessEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-			<div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-					<div class="panel-group ">
-							<div class="panel panel-default">
+            <div class="panel-group ">
+                <div class="panel panel-default">
 
-									<div class="panel-body text-left">
-											<p class="alert alert-success"><strong> Aviso!</strong></p>
-											<p>E-mail enviado com sucesso!</p>
-									</div>
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-							</div>
-					</div>
-			</div>
-	</div>
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>E-mail enviado com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" id="myModalSuccessSalvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-			<div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-					<div class="panel-group ">
-							<div class="panel panel-default">
+            <div class="panel-group ">
+                <div class="panel panel-default">
 
-									<div class="panel-body text-left">
-											<p class="alert alert-success"><strong> Aviso!</strong></p>
-											<p>Prontuário salvo com sucesso!</p>
-									</div>
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-							</div>
-					</div>
-			</div>
-	</div>
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>Prontuário salvo com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModalConfirmaImpressao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-			<div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-					<div class="panel-group ">
-							<div class="panel panel-default ">
-									<div class="panel-body text-left ">
-											<p class="alert alert-warning"><strong> Aviso!</strong></p>
-											<p>Confirma impressão do prontuário?</p>
-									</div>
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessImpressao">Sim</button>
-									<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-							</div>
-					</div>
-			</div>
-	</div>
+            <div class="panel-group ">
+                <div class="panel panel-default ">
+                    <div class="panel-body text-left ">
+                        <p class="alert alert-warning"><strong> Aviso!</strong></p>
+                        <p>Confirma impressão do prontuário?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModalSuccessImpressao">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Modal -->
 
 <div class="modal fade" id="myModalSuccessImpressao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-			<div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-					<div class="panel-group ">
-							<div class="panel panel-default">
+            <div class="panel-group ">
+                <div class="panel panel-default">
 
-									<div class="panel-body text-left">
-											<p class="alert alert-success"><strong> Aviso!</strong></p>
-											<p>Prontuário enviado com sucesso para impressão!</p>
-									</div>
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-							</div>
-					</div>
-			</div>
-	</div>
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>Prontuário enviado com sucesso para impressão!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Modal -->
 
 <div class="modal fade" id="myModalSuccessPaciente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-			<div class="modal-content">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-					<div class="panel-group ">
-							<div class="panel panel-default">
+            <div class="panel-group ">
+                <div class="panel panel-default">
 
-									<div class="panel-body text-left">
-											<p class="alert alert-success"><strong> Aviso!</strong></p>
-											<p>Paciente incluído com sucesso!</p>
-									</div>
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-							</div>
-					</div>
-			</div>
-	</div>
+                    <div class="panel-body text-left">
+                        <p class="alert alert-success"><strong> Aviso!</strong></p>
+                        <p>Paciente incluído com sucesso!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/jquery.js"></script>
 
@@ -224,21 +225,21 @@
 <script src="js/bootstrap-datepicker.js"></script>
 <script type="text/javascript">
 
-	function escondeConvenio() {
+    function escondeConvenio() {
 
-			$('#idConvenios').hide();
-	}
+        $('#idConvenios').hide();
+    }
 
-	function mostraConvenio() {
-			$('#idConvenios').show();
-	}
+    function mostraConvenio() {
+        $('#idConvenios').show();
+    }
 
-	function escondeEmpresa() {
+    function escondeEmpresa() {
 
-			$('#idEmpresas').hide();
-	}
+        $('#idEmpresas').hide();
+    }
 
-	function mostraEmpresa() {
-			$('#idEmpresas').show();
-	}
+    function mostraEmpresa() {
+        $('#idEmpresas').show();
+    }
 </script>
