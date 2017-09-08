@@ -1,29 +1,9 @@
 <div class="panel-group">
     <div class="panel panel-default">
-        <div class="panel-heading"><h4>Consultar Histórico de Alterações - Log</h4></div>
-        <div class="panel-body">
-            <div class="form-group col-lg-12">
-                <div class="form-group col-lg-2">
-                    <label for="tipoPagamento">Tipo de Histórico</label></br>
-                    <select class="form-control input-small" id="sexoPaciente" aria-describedby="sexoPacienteHelp">
-                        <option value="pago">Selecione</option>
-                        <option value="pago">Agenda</option>
-                        <option value="pago">Cobrança</option>
-                        <option value="pago">Convênio</option>
-                        <option value="pago">Despesa</option>
-			<option value="pago">Empresa</option>
-			<option value="pago">Faturamento</option>
-			<option value="pago">Funcionário</option>
-			<option value="pago">Paciente</option>
-			<option value="pago">Parceria</option>
-			<option value="pago">Perfil</option>		
-			<option value="pago">Usuário</option>
-                    </select>
-                </div>
-                
-                
-
-                <div class="form-group col-lg-3">
+      <div class="panel-heading"><h4>Consultar Log</h4></div>
+      <div class="panel-body">
+<div class="form-group col-lg-12">
+		<div class="form-group col-lg-3">
                     <label for="dtFim">Data in&iacute;cio</label>
                     <div class='input-group date col-xs-9' id='dtInicio'>
                         <input type='date' class="form-control datepicker " value="01/01/1900" />
@@ -36,25 +16,28 @@
                 <div class="form-group col-lg-3">
                     <label for="dtFim">Data fim</label>
                     <div class='input-group date col-xs-9' id='dtInicio'>
-                        <input type='date' class="form-control datepicker " value="01/01/1900" />
+                        <input type='date' class="form-control datepicker " value="02/01/1900" />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
                 </div>
-                <div class="form-group col-lg-12">
-                    <div class="form-group col-lg-12 text-right">
-                        <button type="submit" class="btn btn-default">Pesquisar</button>
-                    </div>
-                </div>
 
-            </div>
-        </div>
+      
+          <div class="form-group col-lg-3">
+            
+          </div>
+          <div class="form-group col-lg-6 ">
+            
+              <button type="submit" class="btn btn-default">Filtrar</button>
+          </div>
+      </div>
+      </div>
     </div>
-</div>
+  </div>
   <div class="panel-group">
     <div class="panel panel-default">
-      <div class="panel-heading"><h4>Resultado para: Paciente</h4></div>
+      <div class="panel-heading"><h4>Resultado</h4></div>
       <div class="panel-body">
       
                  <div class="table-responsive">
@@ -65,8 +48,7 @@
                           <th>Usuário</th>
                           <th>Data-Hora</th>
                           <th>Ação</th>
-                          <th>Paciente</th>
-			  <th></th>
+                          <th></th>
                       </tr>
                   </thead>
                   <tbody>
@@ -74,18 +56,20 @@
                           <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
                           <td style="width:100px">msilva</td>
                           <td style="width:150px">20/08/2017 10:01:23</td>
-                          <td style="width:150px">Inclusão</td>
-			  <td style="width:150px">222.333.444-55</td>
-                          <td style="width:80px"></td>
+                          <td style="width:150px">Confirmar Agendamento</td>
+                          <td style="width:200px">
+                            <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal1" title="Detalhar">
+											<span class="glyphicon glyphicon-eye-open"></span>
+                            </button>
+                          </td>
                       </tr>
 		      <tr>
                           <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
                           <td style="width:100px">msilva</td>
                           <td style="width:150px">20/08/2017 10:29:02</td>
-                          <td style="width:150px">Alteração</td>
-			  <td style="width:150px">333.222.999-44</td>
-                          <td style="width:80px">
-                            <button type="button" class="btn btn-xs btn-default" data-toggle="tooltip"  title="Detalhar" onclick="carregarPagina('ControleAcessoConsultaLogDetalhe.html')">
+                          <td style="width:150px">Editar Paciente</td>
+                          <td style="width:200px">
+                            <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal2" title="Detalhar">
 											<span class="glyphicon glyphicon-eye-open"></span>
                             </button>
                           </td>
@@ -94,9 +78,12 @@
                           <td style="width:25px"><i class="glyphicon glyphicon-user"></i></td>
                           <td style="width:100px">nrosseto</td>
                           <td style="width:150px">20/08/2017 18:15:08</td>
-                          <td style="width:150px">Exclusão</td>
-			  <td style="width:150px">222.999.888-77</td>
-                          <td style="width:80px"></td>
+                          <td style="width:150px">Alterar Usuário</td>
+                          <td style="width:200px">
+                            <button type="button" class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal3" title="Detalhar">
+											<span class="glyphicon glyphicon-eye-open"></span>
+                            </button>
+                          </td>
                       </tr>
                   </tbody>
                   
@@ -108,7 +95,193 @@
     </div>
   </div>
   <div class="form-group col-lg-15 text-right">
-  <button type="button" class="btn btn-default " onclick="carregarPagina('index.html')">
+  <button type="button" class="btn btn-default " onclick="window.history.back();">
       <span class="glyphicon glyphicon-chevron-left"></span>Voltar
   </button>	
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
+      </div>
+      <div class="modal-body">
+                <div class="panel-group">
+				  <div class="panel panel-default">
+						<div class="panel-body">
+						<fieldset disabled>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Nome</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="Maria S. Silva" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Usuário</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="msilva" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Data-Hora</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="20/01/2017 10:01:23" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Acão</label>
+							  <div class="col-xs-5">
+								<input class="form-control" type="text" value="Confirmar Agendamento" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">De</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="XXX.XXX.XXX-XX_ConfirmaAgenda ->  " id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Para</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="textarea" value="XXX.XXX.XXX-XX_ConfirmaAgenda -> sim " id="example-text-input">
+							  </div>
+							</div>
+						</fieldset>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
+      </div>
+      <div class="modal-body">
+                <div class="panel-group">
+				  <div class="panel panel-default">
+						<div class="panel-body">
+						<fieldset disabled>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Nome</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="Maria S. Silva" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Usuário</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="msilva" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Data-Hora</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="20/08/2017 10:29:02" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Acão</label>
+							  <div class="col-xs-5">
+								<input class="form-control" type="text" value="Alterar Paciente" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">De</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="XXX.XXX.XXX-XX_Telefone -> (11) 2222-3233 " id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Para</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="textarea" value="XXX.XXX.XXX-XX_Telefone -> (11) 2222-3232" id="example-text-input">
+							  </div>
+							</div>
+						</fieldset>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Detalhes</h4>
+      </div>
+      <div class="modal-body">
+                <div class="panel-group">
+				  <div class="panel panel-default">
+						<div class="panel-body">
+						<fieldset disabled>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Nome</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="Natalia Rossetto" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Usuário</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="nrossetto" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Data-Hora</label>
+							  <div class="col-xs-4">
+								<input class="form-control" type="text" value="20/08/2017 18:15:08" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Acão</label>
+							  <div class="col-xs-5">
+								<input class="form-control" type="text" value="Alterar Usuário" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">De</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="text" value="asilva_status -> Ativo" id="example-text-input">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-xs-2 col-form-label">Para</label>
+							  <div class="col-xs-10">
+								<input class="form-control" type="textarea" value="asilva_status -> Inativo" id="example-text-input">
+							  </div>
+							</div>
+						</fieldset>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
 </div>
