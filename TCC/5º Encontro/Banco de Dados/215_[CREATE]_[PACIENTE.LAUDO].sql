@@ -4,14 +4,14 @@ GO
 IF (EXISTS (SELECT * 
                  FROM INFORMATION_SCHEMA.TABLES 
                  WHERE TABLE_SCHEMA = 'Paciente' 
-                 AND  TABLE_NAME = 'Prontuario'))
+                 AND  TABLE_NAME = 'Laudo'))
 BEGIN
-    DROP TABLE [Paciente].[Prontuario]
+    DROP TABLE [Paciente].[Laudo]
 END
 
-CREATE TABLE [Paciente].[Prontuario](
+CREATE TABLE [Paciente].[Laudo](
 	[Id] [int] NOT NULL PRIMARY KEY,
 	[IdPessoa] [int] NOT NULL FOREIGN KEY REFERENCES Pessoa.Pessoa(Id),
-	[DataAtendimento] [datetime] NOT NULL,
-	[DetalhesAtendimento] [varchar](max) NULL
+	[Descricao] [varchar](max) NOT NULL,
+	[Apto] [bit] NOT NULL
 )

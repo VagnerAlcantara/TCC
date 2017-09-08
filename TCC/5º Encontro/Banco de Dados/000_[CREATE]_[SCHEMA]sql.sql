@@ -64,3 +64,21 @@ go
 
 CREATE SCHEMA [Funcionario]
 GO
+
+IF EXISTS (SELECT  schema_name FROM    information_schema.schemata WHERE   schema_name = 'Usuario' ) 
+BEGIN
+	DROP SCHEMA [Usuario]
+END
+go
+
+CREATE SCHEMA [Usuario]
+GO
+
+IF EXISTS (SELECT  schema_name FROM    information_schema.schemata WHERE   schema_name = 'PsystemLog' ) 
+BEGIN
+	DROP SCHEMA [PsystemLog]
+END
+go
+
+CREATE SCHEMA [PsystemLog]
+GO

@@ -12,7 +12,7 @@ END
 
 CREATE TABLE [Paciente].[Agenda](
 	[Id] [int] identity NOT NULL PRIMARY KEY,
-	[IdPaciente] [int] NOT NULL FOREIGN KEY REFERENCES Paciente.Paciente(Id),
+	[IdPessoa] [int] NOT NULL FOREIGN KEY REFERENCES Pessoa.Pessoa(Id),
 	[IdServico] [int] NOT NULL FOREIGN KEY REFERENCES Clinica.Servico(Id),
 	[Data] [date] NOT NULL,
 	[Hora] [date] NOT NULL,

@@ -16,5 +16,8 @@ CREATE TABLE [Empresa].[Agenda](
 	[IdServico] [int] NOT NULL FOREIGN KEY REFERENCES Clinica.Servico(Id),
 	[Data] [date] NOT NULL,
 	[Hora] [date] NOT NULL,
+	[Cep] [int] NOT NULL,
+	[Numero] [varchar](50) NULL,
+	[Complemento] [varchar](100) NULL,
 	[Observacao] [varchar](200) NULL
 )
