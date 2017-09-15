@@ -13,9 +13,8 @@ END
 CREATE TABLE [PsystemLog].[Log](
 	[Id] [int] identity NOT NULL PRIMARY KEY,
 	[IdUsuario] [int] NOT NULL FOREIGN KEY REFERENCES Usuario.Usuario(Id),
-	[IdTabela] [int] NOT NULL FOREIGN KEY REFERENCES PsystemLog.Tabela(Id),
+	[IdTipoLog] [int] NOT NULL FOREIGN KEY REFERENCES PsystemLog.Tipo(Id),
 	[IdAcao] [int] NOT NULL FOREIGN KEY REFERENCES PsystemLog.Acao(Id),
-	[Campo] [varchar](200) NOT NULL,
-	[De] [varchar](200) NULL,
-	[Para] [varchar](200) NULL,
+	[Data] [date] NOT NULL,
+	[Hora] [time] NOT NULL
  )
