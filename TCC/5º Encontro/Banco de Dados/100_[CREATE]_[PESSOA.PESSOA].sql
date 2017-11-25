@@ -16,3 +16,6 @@ CREATE TABLE [Pessoa].[Pessoa](
 	[CPF] [varchar](20) NOT NULL,
 	[DataNascimento] [date] NOT NULL
 )
+
+ALTER TABLE Pessoa.Pessoa
+ADD Sexo char(1);
